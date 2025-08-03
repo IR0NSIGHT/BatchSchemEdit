@@ -148,6 +148,7 @@ class RedirectText:
     def flush(self):
         pass  # no-op for compatibility
 
+from CombineImages import combine_images_grid
 
 def process_schematics(rootDir):
     last_dir = os.path.basename(os.path.normpath(rootDir))
@@ -156,6 +157,7 @@ def process_schematics(rootDir):
 
     files = find_schem_files(rootDir)
     print(f"Found {len(files)} schematic files in {rootDir}\n", flush=True)
+    output_files = []
     for path in files:
         try:
             print(f"Processing {path}...", flush=True)
@@ -165,8 +167,13 @@ def process_schematics(rootDir):
             filePath = os.path.join(output_path, filename)
             img.save(filePath)
             print(f"Saved image to {filePath}\n", flush=True)
+            output_files.append(filePath)
         except Exception as e:
             print(f"An error occurred while processing {path}: {e}\n", flush=True)
+
+    combined = combine_images_grid(output_files, 5)
+    combined.convert("RGB").save(os.path.join(output_path, "combined.jpg"))
+    combined.show()
 
 
 def on_select_folder(text_widget):
