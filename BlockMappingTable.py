@@ -118,6 +118,39 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
         for block, replacement in mappings.items():
             tree.insert("", "end", values=(block, replacement))
 
+    def copy_value(event=None):
+        """ appends first non empty string from selected rows to clipboard. if all are empty, appends '' """
+        selected_items = tree.selection()
+        values = []
+        for row in selected_items:
+            value = tree.set(row, "replacement")
+            if value == "":
+                continue
+            values.append(value)
+        if len(values) == 0:
+            values = [""]
+        tree.clipboard_clear()
+        tree.clipboard_append(values[0])
+
+    def delete_value(event=None):
+        """deletes values from all selected rows"""
+        selected_items = tree.selection()
+        pasted = tree.clipboard_get()
+        for row in selected_items:
+            try:
+                tree.set(row, "replacement", "")
+            except tk.TclError:
+                pass
+    def paste_value(event=None):
+        """paste current clipboard to all selected rows"""
+        selected_items = tree.selection()
+        pasted = tree.clipboard_get()
+        for row in selected_items:
+            try:
+                tree.set(row, "replacement", pasted)
+            except tk.TclError:
+                pass
+
     tree.heading("original", text="Original Block")
     tree.heading("replacement", text="Replacement Block")
     tree.column("original", width=350)
@@ -128,6 +161,21 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
         tree.insert("", "end", values=(block, replacement))
 
     tree.bind("<Double-1>", on_double_click)
+
+    # copy paste bulk
+    tree.bind("<Control-c>", copy_value)
+    tree.bind("<Control-C>", copy_value)
+    tree.bind("<Control-v>", paste_value)
+    tree.bind("<Control-V>", paste_value)
+
+    tree.bind("<Delete>", delete_value)
+
+    def select_all(event):
+        tree.selection_set(tree.get_children())
+        return "break"  # Prevent default behavior (like beeping or selecting text in widget)
+
+    tree.bind("<Control-a>", select_all)
+    tree.bind("<Control-A>", select_all)  # Handle both lowercase and uppercase
 
     tk.Button(frame, text="Replace blocks", command=on_run_callback).pack(pady=5)
 
