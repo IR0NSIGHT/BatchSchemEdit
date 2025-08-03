@@ -134,6 +134,10 @@ def update_mappings(mappings: dict[str, str]) -> None:
     print("hello world")
 
 
+def get_current_mappings() -> dict[str, str]:
+    return {}
+
+
 # GUI
 def main():
     def show_message(title, message, buttons=False):
@@ -181,41 +185,38 @@ def main():
         return top.result
 
     def set_input_widgets_state(state):
-        entry_replace_block.config(state=state)
-        entry_replace_with.config(state=state)
-        button_replace_blocks.config(state=state)
         button_save_changes.config(state=state)
         button_save_copy.config(state=state)
 
-    def on_replace_blocks():
+    def on_replace_blocks(mappings: dict[str, str]):
         global unsaved_changes
-
         nonlocal modified_schem_data
-        block_to_replace = entry_replace_block.get()
-        replace_with = entry_replace_with.get()
+        valid_mappings = {}
+        for block, replacement in mappings.items():
+            if replacement == "":  # ignore mappings that are not set
+                continue
+            if replacement == block:
+                continue
+            if "minecraft" not in block or "minecraft" not in replacement:
+                messagebox.showerror("Replace Blocks", "Blocks should be preceded with \"minecraft:\".")
+                return
+            elif block == "" or replacement == "":
+                messagebox.showerror("Replace Blocks", "Please fill out all fields.")
+                return
+            valid_mappings[block] = replacement
 
-        if "minecraft" not in block_to_replace or "minecraft" not in replace_with:
-            messagebox.showerror("Replace Blocks", "Blocks should be preceded with \"minecraft:\".")
-        elif block_to_replace == "" or replace_with == "":
-            messagebox.showerror("Replace Blocks", "Please fill out all fields.")
-        else:
-            messages = []
-            for filepath in new_schem_files:
-                schem_data = modified_schem_data.get(filepath)
-                message = replace_blocks(schem_data, block_to_replace, replace_with)
-                modified_schem_data[filepath] = schem_data
+        messages = []
+        for filepath in new_schem_files:
+            schem_data = modified_schem_data.get(filepath)
+            for block, replacement in valid_mappings.items():
+                message = replace_blocks(schem_data, block, replacement)
                 messages.append(f"{os.path.basename(filepath)}: {message}")
+            modified_schem_data[filepath] = schem_data
 
-            unsaved_changes = True
-            root.title(".Schem Block Replacer (Unsaved Changes)")
-
-            update_master_list(modified_schem_data)
-
-            show_message("Blocks Replaced", "\n".join(messages), False)
-
-    def on_entry_click(event):
-        nonlocal last_selected_entry
-        last_selected_entry = event.widget
+        unsaved_changes = True
+        root.title(".Schem Block Replacer (Unsaved Changes)")
+        update_master_list(modified_schem_data)
+        show_message("Blocks Replaced", "\n".join(messages), False)
 
     def on_open_files():
         global unsaved_changes
@@ -236,11 +237,14 @@ def main():
 
     def update_master_list(modified_schem_data):
         nonlocal unique_blocks
-        unique_blocks = sorted(list(get_unique_blocks_from_modified_data(modified_schem_data)),
-                               key=lambda x: x.split(':', 1)[1])
+        unique_blocks = list(get_unique_blocks_from_modified_data(modified_schem_data))
+        unique_blocks = sorted(unique_blocks, key=lambda x: x.split(':', 1)[1])
+
+        # Add block types to mappings list, keep existing mappings if already exists
+        old_mappings: dict[str, str] = get_current_mappings()
         new_mappings = {}
         for block in unique_blocks:
-            new_mappings[block] = ""
+            new_mappings[block] = old_mappings.get(block, "")
         update_mappings(new_mappings)
 
         num_files = len(modified_schem_data)
@@ -293,6 +297,53 @@ def main():
         saved_filepaths_str = "\n".join(saved_filepaths)
         show_message("Changes Saved", f"Changes saved to the original .schem files:\n{saved_filepaths_str}", False)
 
+    def on_save_settings():
+        print("save settings")
+        mappings = get_current_mappings()
+        root = tk.Tk()
+        root.withdraw()  # Hide the main window
+
+        file_path = filedialog.asksaveasfilename(
+            title="Save Mappings As",
+            defaultextension=".txt",
+            filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
+        )
+
+        if not file_path:
+            return  # User canceled
+
+        with open(file_path, "w", encoding="utf-8") as f:
+            for key, value in mappings.items():
+                if value == "":
+                    continue
+                f.write(f"{key}\t{value}\n")
+
+    def on_load_settings():
+        print("load settings")
+        root = tk.Tk()
+        root.withdraw()  # Hide the main window
+
+        file_path = filedialog.askopenfilename(
+            title="Open Mapping File",
+            filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
+        )
+
+        if not file_path:
+            return {}
+
+        mappings_from_file = {}
+        with open(file_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line or "\t" not in line:
+                    continue  # skip empty or malformed lines
+                key, value = line.split("\t", 1)
+                mappings_from_file[key] = value
+        old_mappings = get_current_mappings()
+        for block, replacement in mappings_from_file.items():
+            old_mappings[block] = mappings_from_file[block]
+        update_mappings(old_mappings)
+
     def on_exit():
         global unsaved_changes
         if unsaved_changes:
@@ -307,7 +358,8 @@ def main():
         entry.insert(0, new_text)
 
     def show_credits():
-        messagebox.showinfo("Program Credits", "Author:\nEthan Hackett\n(Discord: northernmockingbird)")
+        messagebox.showinfo("Program Credits",
+                            "Author:\nEthan Hackett\n(Discord: northernmockingbird)\nEdited: Ir0nsight\nGithub: https://github.com/IR0NSIGHT")
 
     root = tk.Tk()
     root.title(".schem Block Replacer")
@@ -324,17 +376,13 @@ def main():
     frame_master_list = tk.Frame(root)
     frame_master_list.pack(side=tk.LEFT, padx=10, pady=0, fill=tk.BOTH, expand=True)
 
-    def mappingSubmit(mapping: dict[str, str]):
-        for block, replacement in mapping.items():
-            print(f"{block} -> {replacement}")
-
     def load_block_list(filepath: str = "./minecraft_blocks.txt") -> list[str]:
         with open(filepath, "r", encoding="utf-8") as file:
             return [line.strip() for line in file if line.strip()]
 
-    block_suggestions = list(set(load_block_list("./minecraft_blocks.txt")))
-    block_suggestions.sort()
-    update_mappings = block_mapping_table(frame_master_list, {}, block_suggestions, mappingSubmit)
+    block_suggestions = sorted(list(set(load_block_list("./minecraft_blocks.txt"))))
+    [update_mappings, get_current_mappings] = block_mapping_table(frame_master_list, {}, block_suggestions,
+                                                                  on_replace_blocks)
 
     unique_blocks = []
 
@@ -350,50 +398,14 @@ def main():
     button_save_copy = tk.Button(frame_input, text="Save to _copy.schem", command=on_save_copy)
     button_save_copy.pack(pady=5)
 
-    divider = tk.Frame(frame_input, height=2, bd=1, relief=tk.SUNKEN)
-    divider.pack(fill=tk.X, pady=10)
+    button_save_mappings = tk.Button(frame_input, text="Save settings", command=on_save_settings)
+    button_save_mappings.pack(pady=5)
 
-    label_replace_block = tk.Label(frame_input, text="Block to replace:")
-    label_replace_block.pack()
-
-    frame_replace_block = tk.Frame(frame_input)
-    frame_replace_block.pack()
-
-    entry_replace_block = tk.Entry(frame_replace_block, width=25)
-    entry_replace_block.pack(side=tk.LEFT)
-    entry_replace_block.bind('<FocusIn>', on_entry_click)
-
-    button_remove_properties_replace_block = tk.Button(frame_replace_block, text="✀",
-                                                       command=lambda: remove_properties(entry_replace_block, lambda:
-                                                       entry_replace_block.get().split("[")[0]))
-    button_remove_properties_replace_block.pack(side=tk.RIGHT, padx=5)
-    ToolTip(button_remove_properties_replace_block,
-            "Base Block Name.\nIf a block has properties, like [axis=y],\nyou can just specify the base block name\nto ignore the properties.")
-
-    label_replace_with = tk.Label(frame_input, text="Replace with:")
-    label_replace_with.pack()
-
-    frame_replace_with = tk.Frame(frame_input)
-    frame_replace_with.pack()
-
-    entry_replace_with = tk.Entry(frame_replace_with, width=25)
-    entry_replace_with.pack(side=tk.LEFT)
-    entry_replace_with.bind('<FocusIn>', on_entry_click)
-
-    button_remove_properties_replace_with = tk.Button(frame_replace_with, text="✀",
-                                                      command=lambda: remove_properties(entry_replace_with, lambda:
-                                                      entry_replace_with.get().split("[")[0]))
-    button_remove_properties_replace_with.pack(side=tk.RIGHT, padx=5)
-    ToolTip(button_remove_properties_replace_with,
-            "Base Block Name.\nIf a block has properties, like [axis=y],\nyou can just specify the base block name\nto ignore the properties.")
-
-    button_replace_blocks = tk.Button(frame_input, text="Replace Blocks", command=on_replace_blocks)
-    button_replace_blocks.pack(pady=10)
+    button_save_mappings = tk.Button(frame_input, text="Load settings", command=on_load_settings)
+    button_save_mappings.pack(pady=5)
 
     info_button = tk.Button(root, text="©", command=show_credits)
     info_button.place(in_=root, relx=1.0, rely=1.0, x=-2, y=-2, anchor="se")
-
-    last_selected_entry = None
 
     set_input_widgets_state(tk.DISABLED)
 

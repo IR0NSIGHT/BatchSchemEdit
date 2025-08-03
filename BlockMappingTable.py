@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from typing import Callable
+from typing import Callable, List, Dict
 
 
 class AutocompleteEntry(tk.Entry):
@@ -49,7 +49,7 @@ class AutocompleteEntry(tk.Entry):
 
 
 def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], suggestion_blocks: list[str],
-                        on_edit_callback=None) -> Callable[[dict[str, str]], None]:
+                        on_edit_callback=None) -> list[Callable[[dict[str, str]], None] | Callable[[], dict[str, str]]]:
     """
     table component with two columns: original, replacement.
     :param parent: Tk widget (frame/window) to insert the table into
@@ -61,6 +61,15 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
 
     frame = tk.Frame(parent)
     tree = ttk.Treeview(frame, columns=("original", "replacement"), show="headings")
+
+    def get_current_mappings() -> dict[str, str]:
+        mapping = {}
+        for row in tree.get_children():
+            values = tree.item(row, "values")
+            key = values[0]
+            value = values[1]
+            mapping[key] = value
+        return mapping
 
     def on_double_click(event):
         region = tree.identify_region(event.x, event.y)
@@ -86,14 +95,7 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
         entry.bind("<FocusOut>", save_edit)
 
     def on_run_callback():
-        mapping = {}
-        for row in tree.get_children():
-            values = tree.item(row, "values")
-            key = values[0]
-            value = values[1]
-            if value == "":
-                continue
-            mapping[key] = value
+        mapping = get_current_mappings()
         if on_edit_callback:
             on_edit_callback(mapping)
 
@@ -120,7 +122,7 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
     tk.Button(frame, text="Submit", command=on_run_callback).pack(pady=5)
 
     frame.pack(fill=tk.BOTH, expand=True)
-    return update_tree_data
+    return [update_tree_data, get_current_mappings]
 
 
 # Example usage
