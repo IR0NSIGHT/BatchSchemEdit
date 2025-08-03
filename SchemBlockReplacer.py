@@ -5,6 +5,8 @@ from tkinter import filedialog, messagebox
 
 from BlockMappingTable import block_mapping_table
 
+BLOCK_LIST_FILE = "./minecraft_blocks.txt"
+
 
 class ToolTip:
     def __init__(self, widget, text: str):
@@ -134,6 +136,17 @@ def update_mappings(mappings: dict[str, str]) -> None:
     print("hello world")
 
 
+def load_block_list(filepath: str = BLOCK_LIST_FILE) -> list[str]:
+    with open(filepath, "r", encoding="utf-8") as file:
+        return [line.strip() for line in file if line.strip()]
+
+
+def write_block_list(blocks: list[str], filepath: str = BLOCK_LIST_FILE) -> None:
+    with open(filepath, "w", encoding="utf-8") as file:
+        for block in blocks:
+            file.write(block + "\n")
+
+
 def get_current_mappings() -> dict[str, str]:
     return {}
 
@@ -145,6 +158,9 @@ def main():
             top.result = result
             top.destroy()
 
+        if message == "":
+            print("nothing to do.")
+            return
         top = tk.Toplevel()
         top.title(title)
 
@@ -217,6 +233,15 @@ def main():
         root.title(".Schem Block Replacer (Unsaved Changes)")
         update_master_list(modified_schem_data)
         show_message("Blocks Replaced", "\n".join(messages), False)
+
+        update_known_block_list(list(get_current_mappings().keys()))
+
+    def update_known_block_list(blocks: list[str]):
+        print(f"adding blocks: {blocks}")
+        block_suggestions = set(load_block_list(BLOCK_LIST_FILE))
+        for block in blocks:
+            block_suggestions.add(block)
+        write_block_list(sorted(list(block_suggestions)), BLOCK_LIST_FILE)
 
     def on_open_files():
         global unsaved_changes
@@ -363,11 +388,13 @@ def main():
         """
         update_mappings({})
 
+        global unsaved_changes
         nonlocal new_schem_files, modified_schem_data
         new_schem_files = []
         modified_schem_data = {}
         master_list_label_text.set("No schem files loaded.")
         set_input_widgets_state(tk.DISABLED)
+        unsaved_changes = False
 
     def on_exit():
         global unsaved_changes
@@ -387,7 +414,7 @@ def main():
                             "Author:\nEthan Hackett\n(Discord: northernmockingbird)\nEdited: Ir0nsight\nGithub: https://github.com/IR0NSIGHT")
 
     root = tk.Tk()
-    root.title(".schem Block Replacer")
+    root.title(".schem Block Replacer v2.0")
     root.protocol("WM_DELETE_WINDOW", on_exit)
     root.geometry("1000x500")
 
@@ -401,11 +428,7 @@ def main():
     frame_master_list = tk.Frame(root)
     frame_master_list.pack(side=tk.LEFT, padx=10, pady=0, fill=tk.BOTH, expand=True)
 
-    def load_block_list(filepath: str = "./minecraft_blocks.txt") -> list[str]:
-        with open(filepath, "r", encoding="utf-8") as file:
-            return [line.strip() for line in file if line.strip()]
-
-    block_suggestions = sorted(list(set(load_block_list("./minecraft_blocks.txt"))))
+    block_suggestions = sorted(list(set(load_block_list(BLOCK_LIST_FILE))))
     [update_mappings, get_current_mappings] = block_mapping_table(frame_master_list, {}, block_suggestions,
                                                                   on_replace_blocks)
 
