@@ -4,6 +4,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 
 from BlockMappingTable import block_mapping_table
+import re
 
 BLOCK_LIST_FILE = "./minecraft_blocks.txt"
 
@@ -118,14 +119,19 @@ def save_schem_file(schem_data, filepath):
 
 
 def get_unique_blocks_from_modified_data(modified_schem_data):
-    unique_blocks = set()
+    unique_blocks: set[str] = set()
 
     for schem_data in modified_schem_data.values():
         palette = schem_data.get('Palette', {})
 
         for block in palette:
             unique_blocks.add(block)
-
+    blocks_no_params = []
+    for block in unique_blocks:
+        cleaned = re.sub(r"\[.*?\]", "", block)
+        blocks_no_params.append(cleaned)
+    for block in blocks_no_params:
+        unique_blocks.add(block)
     return unique_blocks
 
 
@@ -261,7 +267,6 @@ def main():
             root.title(".Schem Block Replacer")
 
     def update_master_list(modified_schem_data):
-        nonlocal unique_blocks
         unique_blocks = list(get_unique_blocks_from_modified_data(modified_schem_data))
         unique_blocks = sorted(unique_blocks, key=lambda x: x.split(':', 1)[1])
 
@@ -371,7 +376,6 @@ def main():
 
     def on_reset_settings():
         """reset to only show blocks in the current schematics state"""
-        nonlocal unique_blocks
         unique_blocks = list(get_unique_blocks_from_modified_data(modified_schem_data))
         unique_blocks = sorted(unique_blocks, key=lambda x: x.split(':', 1)[1])
 
@@ -431,8 +435,6 @@ def main():
     block_suggestions = sorted(list(set(load_block_list(BLOCK_LIST_FILE))))
     [update_mappings, get_current_mappings] = block_mapping_table(frame_master_list, {}, block_suggestions,
                                                                   on_replace_blocks)
-
-    unique_blocks = []
 
     frame_input = tk.Frame(root)
     frame_input.pack(side=tk.RIGHT, padx=10, pady=10)
