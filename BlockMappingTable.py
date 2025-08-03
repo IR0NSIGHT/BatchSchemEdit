@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from typing import Callable
 
 
 class AutocompleteEntry(tk.Entry):
@@ -48,7 +49,7 @@ class AutocompleteEntry(tk.Entry):
 
 
 def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], suggestion_blocks: list[str],
-                        on_edit_callback=None):
+                        on_edit_callback=None) -> Callable[[dict[str, str]], None]:
     """
     table component with two columns: original, replacement.
     :param parent: Tk widget (frame/window) to insert the table into
@@ -59,6 +60,7 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
     """
 
     frame = tk.Frame(parent)
+    tree = ttk.Treeview(frame, columns=("original", "replacement"), show="headings")
 
     def on_double_click(event):
         region = tree.identify_region(event.x, event.y)
@@ -95,7 +97,15 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
         if on_edit_callback:
             on_edit_callback(mapping)
 
-    tree = ttk.Treeview(frame, columns=("original", "replacement"), show="headings")
+    def update_tree_data(mappings: dict[str, str]) -> None:
+        # Clear all existing rows
+        for item in tree.get_children():
+            tree.delete(item)
+
+        # Insert updated data
+        for block, replacement in mappings.items():
+            tree.insert("", "end", values=(block, replacement))
+
     tree.heading("original", text="Original Block")
     tree.heading("replacement", text="Replacement Block")
     tree.column("original", width=350)
@@ -110,7 +120,7 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
     tk.Button(frame, text="Submit", command=on_run_callback).pack(pady=5)
 
     frame.pack(fill=tk.BOTH, expand=True)
-    return frame
+    return update_tree_data
 
 
 # Example usage
@@ -133,9 +143,45 @@ if __name__ == "__main__":
         "minecraft:stone": "",
         "minecraft:glass": "minecraft:air",
         "minecraft:oak_log[axis=y]": "",
-        "minecraft:grass_block": ""
+        "minecraft:grass_block": "",
+        "minecraft:dirt": "",
+        "minecraft:cobblestone": "",
+        "minecraft:sand": "",
+        "minecraft:gravel": "",
+        "minecraft:oak_leaves": "",
+        "minecraft:birch_log": "",
+        "minecraft:spruce_log": "",
+        "minecraft:jungle_log": "",
+        "minecraft:acacia_log": "",
+        "minecraft:dark_oak_log": "",
+        "minecraft:sandstone": "",
+        "minecraft:red_sandstone": "",
+        "minecraft:brick_block": "",
+        "minecraft:tnt": "",
+        "minecraft:bookshelf": "",
+        "minecraft:mossy_cobblestone": "",
+        "minecraft:obsidian": "",
+        "minecraft:diamond_ore": "",
+        "minecraft:iron_ore": "",
+        "minecraft:coal_ore": "",
+        "minecraft:gold_ore": "",
+        "minecraft:redstone_ore": "",
+        "minecraft:lapis_ore": "",
+        "minecraft:emerald_ore": "",
+        "minecraft:nether_quartz_ore": "",
+        "minecraft:netherrack": "",
+        "minecraft:soul_sand": "",
+        "minecraft:glowstone": "",
+        "minecraft:nether_brick": "",
+        "minecraft:end_stone": "",
+        "minecraft:sea_lantern": "",
+        "minecraft:prismarine": "",
+        "minecraft:prismarine_bricks": "",
+        "minecraft:dark_prismarine": "",
+        "minecraft:sponge": "",
+        "minecraft:wet_sponge": "",
+        "minecraft:clay": ""
     }
-
     # Suggestion list — ideally the full list of vanilla or custom blocks
     block_suggestions = [
         "minecraft:air", "minecraft:stone", "minecraft:dirt", "minecraft:glass",

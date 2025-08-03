@@ -3,6 +3,9 @@ import nbtlib
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
+from BlockMappingTable import block_mapping_table
+
+
 class ToolTip:
     def __init__(self, widget, text):
         self.widget = widget
@@ -26,6 +29,7 @@ class ToolTip:
             self.tooltip.destroy()
             self.tooltip = None
 
+
 def load_schem_files(schem_files):
     schem_data_dict = {}
 
@@ -35,6 +39,7 @@ def load_schem_files(schem_files):
 
     return schem_data_dict
 
+
 def replace_blocks(schem_data, block_to_replace, replace_with):
     replaced_blocks = 0
     if not schem_data:
@@ -43,7 +48,8 @@ def replace_blocks(schem_data, block_to_replace, replace_with):
     if 'Palette' in schem_data:
         palette = schem_data['Palette']
 
-        if "[" not in block_to_replace and "[" in replace_with and any(replace_with.split("[")[0]+"[" in item for item in palette):
+        if "[" not in block_to_replace and "[" in replace_with and any(
+                replace_with.split("[")[0] + "[" in item for item in palette):
             return "Please remove the properties of the replacement block (everything in brackets) to prevent conflicts."
 
         if block_to_replace == replace_with:
@@ -65,33 +71,33 @@ def replace_blocks(schem_data, block_to_replace, replace_with):
             return f"No matching blocks found for: {block_to_replace}"
 
         if "[" not in block_to_replace:
-                changes = []
+            changes = []
 
-                for block in palette:
-                    if block_to_replace == block.split("[")[0]:
-                        new_key = block.replace(block_to_replace, replace_with)
-                        changes.append((block, new_key))
+            for block in palette:
+                if block_to_replace == block.split("[")[0]:
+                    new_key = block.replace(block_to_replace, replace_with)
+                    changes.append((block, new_key))
 
-                for old_key, new_key in changes:
-                    palette[new_key] = palette.pop(old_key)
+            for old_key, new_key in changes:
+                palette[new_key] = palette.pop(old_key)
         else:
             if replace_with in palette:
-                    to_replace_index = palette[block_to_replace]
-                    replace_with_index = palette[replace_with]
-                    block_data = schem_data['BlockData']
+                to_replace_index = palette[block_to_replace]
+                replace_with_index = palette[replace_with]
+                block_data = schem_data['BlockData']
 
-                    block_data_bytes = bytearray(block_data)
+                block_data_bytes = bytearray(block_data)
 
-                    modified = False
-                    for i, block in enumerate(block_data_bytes):
-                        if block == to_replace_index:
-                            block_data_bytes[i] = replace_with_index
-                            modified = True
+                modified = False
+                for i, block in enumerate(block_data_bytes):
+                    if block == to_replace_index:
+                        block_data_bytes[i] = replace_with_index
+                        modified = True
 
-                    if modified:
-                        schem_data['BlockData'] = nbtlib.ByteArray(block_data_bytes)
+                if modified:
+                    schem_data['BlockData'] = nbtlib.ByteArray(block_data_bytes)
 
-                    del palette[block_to_replace]
+                del palette[block_to_replace]
             else:
                 palette[replace_with] = palette.pop(block_to_replace)
 
@@ -101,11 +107,13 @@ def replace_blocks(schem_data, block_to_replace, replace_with):
 
         return f"Replaced {replaced_blocks} blocks"
 
+
 def save_schem_file(schem_data, filepath):
     try:
         schem_data.save(filepath)
     except Exception as e:
         return f"Error saving file: {e}"
+
 
 def get_unique_blocks_from_modified_data(modified_schem_data):
     unique_blocks = set()
@@ -118,7 +126,14 @@ def get_unique_blocks_from_modified_data(modified_schem_data):
 
     return unique_blocks
 
+
 unsaved_changes = False
+
+
+def update_mappings(mappings: dict[str, str]) -> None:
+    print("hello world")
+
+
 # GUI
 def main():
     def show_message(title, message, buttons=False):
@@ -180,9 +195,9 @@ def main():
         replace_with = entry_replace_with.get()
 
         if "minecraft" not in block_to_replace or "minecraft" not in replace_with:
-            messagebox.showerror("Replace Blocks", "Blocks should be preceded with \"minecraft:\".")   
+            messagebox.showerror("Replace Blocks", "Blocks should be preceded with \"minecraft:\".")
         elif block_to_replace == "" or replace_with == "":
-            messagebox.showerror("Replace Blocks", "Please fill out all fields.")   
+            messagebox.showerror("Replace Blocks", "Please fill out all fields.")
         else:
             messages = []
             for filepath in new_schem_files:
@@ -198,15 +213,6 @@ def main():
 
             show_message("Blocks Replaced", "\n".join(messages), False)
 
-    def on_listbox_select(event):
-        selected_block = listbox_master_list.get(listbox_master_list.curselection())
-        if last_selected_entry is None:
-            entry_replace_block.delete(0, tk.END)
-            entry_replace_block.insert(0, selected_block)
-        else:
-            last_selected_entry.delete(0, tk.END)
-            last_selected_entry.insert(0, selected_block)
-
     def on_entry_click(event):
         nonlocal last_selected_entry
         last_selected_entry = event.widget
@@ -215,7 +221,8 @@ def main():
         global unsaved_changes
         nonlocal modified_schem_data, new_schem_files
         if unsaved_changes:
-            if not messagebox.askyesno("Exit", "There are unsaved changes. Are you sure you want to load new .schem file(s)?"):
+            if not messagebox.askyesno("Exit",
+                                       "There are unsaved changes. Are you sure you want to load new .schem file(s)?"):
                 return
 
         new_schem_files = filedialog.askopenfilenames(title="Select .schem file(s)",
@@ -229,17 +236,19 @@ def main():
 
     def update_master_list(modified_schem_data):
         nonlocal unique_blocks
-        unique_blocks = sorted(list(get_unique_blocks_from_modified_data(modified_schem_data)), key=lambda x: x.split(':', 1)[1])
-        listbox_master_list.delete(0, tk.END)
+        unique_blocks = sorted(list(get_unique_blocks_from_modified_data(modified_schem_data)),
+                               key=lambda x: x.split(':', 1)[1])
+        new_mappings = {}
         for block in unique_blocks:
-            listbox_master_list.insert(tk.END, block)
+            new_mappings[block] = ""
+        update_mappings(new_mappings)
 
         num_files = len(modified_schem_data)
         if num_files == 1:
             master_list_label_text.set("Full List of All Unique Blocks in 1 File")
         else:
             master_list_label_text.set(f"Full List of All Unique Blocks in {num_files} files")
-            
+
     def on_save_changes():
         global unsaved_changes
         saved_filepaths = []
@@ -303,7 +312,7 @@ def main():
     root = tk.Tk()
     root.title(".schem Block Replacer")
     root.protocol("WM_DELETE_WINDOW", on_exit)
-    root.geometry("800x500")
+    root.geometry("1000x500")
 
     new_schem_files = []
     modified_schem_data = {}
@@ -315,23 +324,17 @@ def main():
     frame_master_list = tk.Frame(root)
     frame_master_list.pack(side=tk.LEFT, padx=10, pady=0, fill=tk.BOTH, expand=True)
 
-    scrollbar_master_list_x = tk.Scrollbar(frame_master_list, orient=tk.HORIZONTAL)
-    scrollbar_master_list_x.pack(side=tk.BOTTOM, fill=tk.X)
+    def mappingSubmit(mapping: dict[str, str]):
+        for block, replacement in mapping.items():
+            print(f"{block} -> {replacement}")
 
-    scrollbar_master_list_y = tk.Scrollbar(frame_master_list)
-    scrollbar_master_list_y.pack(side=tk.RIGHT, fill=tk.Y)
+    def load_block_list(filepath: str = "./minecraft_blocks.txt") -> list[str]:
+        with open(filepath, "r", encoding="utf-8") as file:
+            return [line.strip() for line in file if line.strip()]
 
-    listbox_master_list = tk.Listbox(
-        frame_master_list,
-        yscrollcommand=scrollbar_master_list_y.set,
-        xscrollcommand=scrollbar_master_list_x.set,
-        width=60
-    )
-    listbox_master_list.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
-    listbox_master_list.bind('<<ListboxSelect>>', on_listbox_select)
-
-    scrollbar_master_list_y.config(command=listbox_master_list.yview)
-    scrollbar_master_list_x.config(command=listbox_master_list.xview)
+    block_suggestions = list(set(load_block_list("./minecraft_blocks.txt")))
+    block_suggestions.sort()
+    update_mappings = block_mapping_table(frame_master_list, {}, block_suggestions, mappingSubmit)
 
     unique_blocks = []
 
@@ -360,9 +363,12 @@ def main():
     entry_replace_block.pack(side=tk.LEFT)
     entry_replace_block.bind('<FocusIn>', on_entry_click)
 
-    button_remove_properties_replace_block = tk.Button(frame_replace_block, text="✀", command=lambda: remove_properties(entry_replace_block, lambda: entry_replace_block.get().split("[")[0]))
+    button_remove_properties_replace_block = tk.Button(frame_replace_block, text="✀",
+                                                       command=lambda: remove_properties(entry_replace_block, lambda:
+                                                       entry_replace_block.get().split("[")[0]))
     button_remove_properties_replace_block.pack(side=tk.RIGHT, padx=5)
-    ToolTip(button_remove_properties_replace_block, "Base Block Name.\nIf a block has properties, like [axis=y],\nyou can just specify the base block name\nto ignore the properties.")
+    ToolTip(button_remove_properties_replace_block,
+            "Base Block Name.\nIf a block has properties, like [axis=y],\nyou can just specify the base block name\nto ignore the properties.")
 
     label_replace_with = tk.Label(frame_input, text="Replace with:")
     label_replace_with.pack()
@@ -374,13 +380,16 @@ def main():
     entry_replace_with.pack(side=tk.LEFT)
     entry_replace_with.bind('<FocusIn>', on_entry_click)
 
-    button_remove_properties_replace_with = tk.Button(frame_replace_with, text="✀", command=lambda: remove_properties(entry_replace_with, lambda: entry_replace_with.get().split("[")[0]))
+    button_remove_properties_replace_with = tk.Button(frame_replace_with, text="✀",
+                                                      command=lambda: remove_properties(entry_replace_with, lambda:
+                                                      entry_replace_with.get().split("[")[0]))
     button_remove_properties_replace_with.pack(side=tk.RIGHT, padx=5)
-    ToolTip(button_remove_properties_replace_with, "Base Block Name.\nIf a block has properties, like [axis=y],\nyou can just specify the base block name\nto ignore the properties.")
+    ToolTip(button_remove_properties_replace_with,
+            "Base Block Name.\nIf a block has properties, like [axis=y],\nyou can just specify the base block name\nto ignore the properties.")
 
     button_replace_blocks = tk.Button(frame_input, text="Replace Blocks", command=on_replace_blocks)
     button_replace_blocks.pack(pady=10)
-    
+
     info_button = tk.Button(root, text="©", command=show_credits)
     info_button.place(in_=root, relx=1.0, rely=1.0, x=-2, y=-2, anchor="se")
 
@@ -389,6 +398,7 @@ def main():
     set_input_widgets_state(tk.DISABLED)
 
     root.mainloop()
+
 
 if __name__ == "__main__":
     main()
