@@ -4,19 +4,19 @@ from typing import Callable, List, Dict
 
 
 class AutocompleteEntry(tk.Entry):
-    def __init__(self, master, suggestions, **kwargs):
+    def __init__(self, master, suggestions: list[str], **kwargs):
         super().__init__(master, **kwargs)
         self.suggestions = suggestions
         self.listbox = None
         self.bind("<KeyRelease>", self.on_key_release)
 
     def on_key_release(self, event):
-        value = self.get()
-        if not value:
+        userString = self.get()
+        if not userString:
             self.hide_suggestions()
             return
 
-        filtered = [s for s in self.suggestions if s.startswith(value)]
+        filtered = [blockName for blockName in self.suggestions if userString in blockName]
         if filtered:
             if not self.listbox:
                 self.show_suggestions()
@@ -25,8 +25,16 @@ class AutocompleteEntry(tk.Entry):
             self.hide_suggestions()
 
     def show_suggestions(self):
-        self.listbox = tk.Listbox(self.master, height=6)
-        self.listbox.place(x=self.winfo_x(), y=self.winfo_y() + self.winfo_height())
+        self.listbox = tk.Listbox(self.master, height=10)
+
+        # Ensure dimensions are updated
+        self.update_idletasks()
+
+        x = self.winfo_x()
+        y = self.winfo_y() + self.winfo_height()
+        width = self.winfo_width()
+
+        self.listbox.place(x=x, y=y, width=width)
         self.listbox.bind("<<ListboxSelect>>", self.select_suggestion)
 
     def update_listbox(self, suggestions):
@@ -79,7 +87,9 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
         if column != '#2' or not row_id:
             return
 
-        x, y, width, height = tree.bbox(row_id, column=column)
+        x, y, _, height = tree.bbox(row_id, column=column)
+        width = tree.column("replacement", option="width")
+        print(f"colum width = {width}")
         replacement_value = tree.set(row_id, "replacement")
 
         entry = AutocompleteEntry(tree, suggestion_blocks)
@@ -119,7 +129,7 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
 
     tree.bind("<Double-1>", on_double_click)
 
-    tk.Button(frame, text="Submit", command=on_run_callback).pack(pady=5)
+    tk.Button(frame, text="Replace blocks", command=on_run_callback).pack(pady=5)
 
     frame.pack(fill=tk.BOTH, expand=True)
     return [update_tree_data, get_current_mappings]

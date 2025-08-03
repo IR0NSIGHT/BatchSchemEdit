@@ -7,7 +7,7 @@ from BlockMappingTable import block_mapping_table
 
 
 class ToolTip:
-    def __init__(self, widget, text):
+    def __init__(self, widget, text: str):
         self.widget = widget
         self.text = text
         self.tooltip = None
@@ -344,6 +344,31 @@ def main():
             old_mappings[block] = mappings_from_file[block]
         update_mappings(old_mappings)
 
+    def on_reset_settings():
+        """reset to only show blocks in the current schematics state"""
+        nonlocal unique_blocks
+        unique_blocks = list(get_unique_blocks_from_modified_data(modified_schem_data))
+        unique_blocks = sorted(unique_blocks, key=lambda x: x.split(':', 1)[1])
+
+        # Add block types to mappings list, keep existing mappings if already exists
+        new_mappings = {}
+        for block in unique_blocks:
+            new_mappings[block] = ""
+        update_mappings(new_mappings)
+
+    def on_reset_state():
+        """
+        resets the state of the table, wiping all entries and unloading all schematics.
+        :return:
+        """
+        update_mappings({})
+
+        nonlocal new_schem_files, modified_schem_data
+        new_schem_files = []
+        modified_schem_data = {}
+        master_list_label_text.set("No schem files loaded.")
+        set_input_widgets_state(tk.DISABLED)
+
     def on_exit():
         global unsaved_changes
         if unsaved_changes:
@@ -391,22 +416,38 @@ def main():
 
     button_open_files = tk.Button(frame_input, text="Open .schem(s)", command=on_open_files)
     button_open_files.pack(pady=10)
+    ToolTip(button_open_files, "Load .schem(s) into BatchSchemEdit app")
 
     button_save_changes = tk.Button(frame_input, text="Save .schem(s)", command=on_save_changes)
     button_save_changes.pack(pady=5)
+    ToolTip(button_save_changes, "Save .schem(s) and overwrite the original files")
 
     button_save_copy = tk.Button(frame_input, text="Save to _copy.schem", command=on_save_copy)
     button_save_copy.pack(pady=5)
+    ToolTip(button_save_copy, "Save .schem(s) with the suffix '_copy' to file without editing the originals")
+
+    button_reset_all = tk.Button(frame_input, text="Unload .schem(s)", command=on_reset_state)
+    button_reset_all.pack(pady=5)
+    ToolTip(button_reset_all, "Unload .schem(s) and reset the table to a clean state")
+
+    divider = tk.Frame(frame_input, height=2, bd=1, relief=tk.SUNKEN)
+    divider.pack(fill=tk.X, padx=5, pady=10)
 
     button_save_mappings = tk.Button(frame_input, text="Save settings", command=on_save_settings)
     button_save_mappings.pack(pady=5)
+    ToolTip(button_save_mappings, "Save all blocks+replacement that are not empty to a settings.txt to reuse it later")
 
-    button_save_mappings = tk.Button(frame_input, text="Load settings", command=on_load_settings)
-    button_save_mappings.pack(pady=5)
+    button_load_mappings = tk.Button(frame_input, text="Load settings", command=on_load_settings)
+    button_load_mappings.pack(pady=5)
+    ToolTip(button_load_mappings, "Load a settings.txt file that contains mappings")
+
+    button_clear_table = tk.Button(frame_input, text="Clear settings", command=on_reset_settings)
+    button_clear_table.pack(pady=5)
+    ToolTip(button_clear_table, "Clear the settings, leave only blocks that exist in the loaded schematics")
 
     info_button = tk.Button(root, text="©", command=show_credits)
     info_button.place(in_=root, relx=1.0, rely=1.0, x=-2, y=-2, anchor="se")
-
+    ToolTip(info_button, "Information")
     set_input_widgets_state(tk.DISABLED)
 
     root.mainloop()
