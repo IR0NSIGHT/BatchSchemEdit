@@ -1,0 +1,7227 @@
+{
+  "name": "Vanilla",
+  "type": "flatblock",
+  "version": "1.21.25w15a",
+  "data": [
+    {
+      "name": "minecraft:air",
+      "color": "#ffffff",
+      "alpha": 0,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:cave_air",
+      "color": "#ffffff",
+      "alpha": 0,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:void_air",
+      "color": "#ffffff",
+      "alpha": 0,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:light",
+      "color": "#ffffff",
+      "alpha": 0,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:structure_void",
+      "color": "#ffffff",
+      "alpha": 0,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:stone",
+      "color": "#838383"
+    },
+    {
+      "name": "minecraft:stone_slab",
+      "color": "#848484",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stone_stairs",
+      "color": "#777777",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:granite",
+      "color": "#997263"
+    },
+    {
+      "name": "minecraft:granite_slab",
+      "color": "#9c6c5a",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:granite_stairs",
+      "color": "#8d6151",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:granite_wall",
+      "color": "#997263",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:polished_granite",
+      "color": "#9f7362"
+    },
+    {
+      "name": "minecraft:polished_granite_slab",
+      "color": "#a1705d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_granite_stairs",
+      "color": "#926554",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:diorite",
+      "color": "#b4b4b7"
+    },
+    {
+      "name": "minecraft:diorite_slab",
+      "color": "#8a8d8c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:diorite_stairs",
+      "color": "#b3b2b3",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:diorite_wall",
+      "color": "#b4b4b7",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:polished_diorite",
+      "color": "#b7b7ba"
+    },
+    {
+      "name": "minecraft:polished_diorite_slab",
+      "color": "#cacacc",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_diorite_stairs",
+      "color": "#b7b7b9",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:andesite",
+      "color": "#838383"
+    },
+    {
+      "name": "minecraft:andesite_slab",
+      "color": "#8e8e8f",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:andesite_stairs",
+      "color": "#818182",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:andesite_wall",
+      "color": "#838383",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:polished_andesite",
+      "color": "#858587"
+    },
+    {
+      "name": "minecraft:polished_andesite_slab",
+      "color": "#8a8d8c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_andesite_stairs",
+      "color": "#7d807f",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:grass_block",
+      "color": "#939393",
+      "biomeGrass": true
+    },
+    {
+      "name": "minecraft:dirt",
+      "color": "#866043"
+    },
+    {
+      "name": "minecraft:coarse_dirt",
+      "color": "#77563b"
+    },
+    {
+      "name": "minecraft:podzol",
+      "color": "#5b3f1d"
+    },
+    {
+      "name": "minecraft:cobblestone",
+      "color": "#7b7b7b"
+    },
+    {
+      "name": "minecraft:cobblestone_slab",
+      "color": "#818181",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cobblestone_stairs",
+      "color": "#747474",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cobblestone_wall",
+      "color": "#7b7b7b",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:oak_planks",
+      "color": "#9d804f"
+    },
+    {
+      "name": "minecraft:spruce_planks",
+      "color": "#684e2f"
+    },
+    {
+      "name": "minecraft:birch_planks",
+      "color": "#c4b37b"
+    },
+    {
+      "name": "minecraft:jungle_planks",
+      "color": "#9a6e4d"
+    },
+    {
+      "name": "minecraft:acacia_planks",
+      "color": "#a95c33"
+    },
+    {
+      "name": "minecraft:dark_oak_planks",
+      "color": "#3d2812"
+    },
+    {
+      "name": "minecraft:oak_sapling",
+      "color": "#486626",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:spruce_sapling",
+      "color": "#333a22",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:birch_sapling",
+      "color": "#779755",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:jungle_sapling",
+      "color": "#315613",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:acacia_sapling",
+      "color": "#737314",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:dark_oak_sapling",
+      "color": "#39561c",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:mangrove_propagule",
+      "color": "#60af54",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:bamboo_sapling",
+      "color": "#5c5924",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:pale_oak_sapling",
+      "color": "#6e6a64",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:bamboo",
+      "color": "#5e9014",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:bamboo_block",
+      "color": "#8b8e3e"
+    },
+    {
+      "name": "minecraft:bamboo_planks",
+      "color": "#c1ad50"
+    },
+    {
+      "name": "minecraft:bamboo_button",
+      "color": "#c1ad50",
+      "alpha": 0.25,
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:bamboo_door",
+      "color": "#bfab51",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:bamboo_fence_gate",
+      "color": "#c1ad50",
+      "alpha": 0.60,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:bamboo_fence",
+      "color": "#c1ad50",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:bamboo_pressure_plate",
+      "color": "#c1ad50",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:bamboo_slab",
+      "color": "#cab554",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:bamboo_stairs",
+      "color": "#b7a44c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:bamboo_sign",
+      "color": "#c1ad50",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:bamboo_hanging_sign",
+      "color": "#c1ad50",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:bamboo_wall_sign",
+      "color": "#c1ad50",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:bamboo_wall_hanging_sign",
+      "color": "#c1ad50",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:bamboo_trapdoor",
+      "color": "#c7b355",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:bamboo_mosaic",
+      "color": "#9d804f"
+    },
+    {
+      "name": "minecraft:bamboo_mosaic_slab",
+      "color": "#c7b251",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:bamboo_mosaic_stairs",
+      "color": "#b4a14a",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:bedrock",
+      "color": "#545454"
+    },
+    {
+      "name": "minecraft:cherry_log",
+      "color": "#b98d89",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#37212C"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cherry_wood",
+      "color": "#b98d89"
+    },
+    {
+      "name": "minecraft:stripped_cherry_log",
+      "color": "#d79195",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#dda59e"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stripped_cherry_wood",
+      "color": "#b98d89"
+    },
+    {
+      "name": "minecraft:cherry_button",
+      "color": "#e3b3ad",
+      "alpha": 0.25,
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:cherry_door",
+      "color": "#dfaba5",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cherry_fence",
+      "color": "#e3b3ad",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cherry_fence_gate",
+      "color": "#e3b3ad",
+      "alpha": 0.60,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cherry_planks",
+      "color": "#e3b3ad"
+    },
+    {
+      "name": "minecraft:cherry_pressure_plate",
+      "color": "#e3b3ad",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:cherry_sapling",
+      "color": "#a4768f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:cherry_slab",
+      "color": "#e3b3ad",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cherry_stairs",
+      "color": "#e3b3ad",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cherry_sign",
+      "color": "#e3b3ad",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:cherry_hanging_sign",
+      "color": "#e3b3ad",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:cherry_wall_sign",
+      "color": "#e3b3ad",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:cherry_wall_hanging_sign",
+      "color": "#e3b3ad",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:cherry_trapdoor",
+      "color": "#e3b3ad",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pale_oak_planks",
+      "color": "#e4dad8"
+    },
+    {
+      "name": "minecraft:pale_oak_button",
+      "color": "#e4dad8"
+    },
+    {
+      "name": "minecraft:pale_oak_door",
+      "color": "#d8d0cf"
+    },
+    {
+      "name": "minecraft:pale_oak_fence",
+      "color": "#e4dad8"
+    },
+    {
+      "name": "minecraft:pale_oak_fence_gate",
+      "color": "#e4dad8"
+    },
+    {
+      "name": "minecraft:pale_oak_pressure_plate",
+      "color": "#e4dad8"
+    },
+    {
+      "name": "minecraft:pale_oak_slab",
+      "color": "#efe4e2",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:pale_oak_stairs",
+      "color": "#d8cfcd",
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:pale_oak_trapdoor",
+      "color": "#e6dcdb"
+    },
+    {
+      "name": "minecraft:pale_oak_sign",
+      "color": "#e4dad8"
+    },
+    {
+      "name": "minecraft:pale_oak_hanging_sign",
+      "color": "#e4dad8"
+    },
+    {
+      "name": "minecraft:pale_oak_wall_sign",
+      "color": "#e4dad8"
+    },
+    {
+      "name": "minecraft:pale_oak_wall_hanging_sign",
+      "color": "#e4dad8"
+    },
+    {
+      "name": "minecraft:flowing_water",
+      "color": "#a9a9a9",
+      "alpha": 0.53,
+      "transparent": true,
+      "liquid": true
+    },
+    {
+      "name": "minecraft:water",
+      "color": "#b1b1b1",
+      "alpha": 0.53,
+      "transparent": true,
+      "liquid": true
+    },
+    {
+      "name": "minecraft:flowing_lava",
+      "color": "#fc5700",
+      "transparent": true,
+      "liquid": true
+    },
+    {
+      "name": "minecraft:lava",
+      "color": "#fc5700",
+      "transparent": true,
+      "liquid": true
+    },
+    {
+      "name": "minecraft:sand",
+      "color": "#dbd3a0"
+    },
+    {
+      "name": "minecraft:red_sand",
+      "color": "#a95821"
+    },
+    {
+      "name": "minecraft:gravel",
+      "color": "#787574"
+    },
+    {
+      "name": "minecraft:gold_ore",
+      "color": "#fcee4b"
+    },
+    {
+      "name": "minecraft:deepslate_gold_ore",
+      "color": "#fcee4b"
+    },
+    {
+      "name": "minecraft:raw_gold_block",
+      "color": "#fcee4b"
+    },
+    {
+      "name": "minecraft:iron_ore",
+      "color": "#af8e77"
+    },
+    {
+      "name": "minecraft:deepslate_iron_ore",
+      "color": "#af8e77"
+    },
+    {
+      "name": "minecraft:raw_iron_block",
+      "color": "#af8e77"
+    },
+    {
+      "name": "minecraft:coal_ore",
+      "color": "#454545"
+    },
+    {
+      "name": "minecraft:deepslate_coal_ore",
+      "color": "#454545"
+    },
+    {
+      "name": "minecraft:oak_log",
+      "color": "#665132",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#9b7d4d"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:spruce_log",
+      "color": "#2e1d0c",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#695130"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:birch_log",
+      "color": "#cfcec9",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#b8a67a"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:jungle_log",
+      "color": "#57441b",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#9a7749"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:acacia_log",
+      "color": "#696359",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#9a5b40"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:dark_oak_log",
+      "color": "#342917",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#4e3e29"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mangrove_log",
+      "color": "#544329",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#67312a"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:pale_oak_log",
+      "color": "#c7bdbc",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#584e4b"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stripped_spruce_log",
+      "color": "#745a34",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#715934"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stripped_birch_log",
+      "color": "#c5b076",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#b9a168"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stripped_jungle_log",
+      "color": "#ab8555",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#ab8655"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stripped_acacia_log",
+      "color": "#af5d3c",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#a75c3b"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stripped_dark_oak_log",
+      "color": "#614c32",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#57452e"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stripped_oak_log",
+      "color": "#b19056",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#a48651"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stripped_mangrove_log",
+      "color": "#783630",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#6d2c2b"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stripped_pale_oak_log",
+      "color": "#ebe3e2",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#ebe3e2"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:oak_wood",
+      "color": "#665132"
+    },
+    {
+      "name": "minecraft:spruce_wood",
+      "color": "#2e1d0c"
+    },
+    {
+      "name": "minecraft:birch_wood",
+      "color": "#cfcec9"
+    },
+    {
+      "name": "minecraft:jungle_wood",
+      "color": "#57441b"
+    },
+    {
+      "name": "minecraft:acacia_wood",
+      "color": "#696359"
+    },
+    {
+      "name": "minecraft:dark_oak_wood",
+      "color": "#342917"
+    },
+    {
+      "name": "minecraft:mangrove_wood",
+      "color": "#544329"
+    },
+    {
+      "name": "minecraft:pale_oak_wood",
+      "color": "#c7bdbc"
+    },
+    {
+      "name": "minecraft:stripped_oak_wood",
+      "color": "#b19056"
+    },
+    {
+      "name": "minecraft:stripped_spruce_wood",
+      "color": "#745a34"
+    },
+    {
+      "name": "minecraft:stripped_birch_wood",
+      "color": "#c5b076"
+    },
+    {
+      "name": "minecraft:stripped_jungle_wood",
+      "color": "#ab8555"
+    },
+    {
+      "name": "minecraft:stripped_acacia_wood",
+      "color": "#af5d3c"
+    },
+    {
+      "name": "minecraft:stripped_dark_oak_wood",
+      "color": "#614c32"
+    },
+    {
+      "name": "minecraft:stripped_mangrove_wood",
+      "color": "#783630"
+    },
+    {
+      "name": "minecraft:stripped_bamboo_block",
+      "color": "#b29f49"
+    },
+    {
+      "name": "minecraft:stripped_pale_oak_wood",
+      "color": "#ebe3e2"
+    },
+    {
+      "name": "minecraft:oak_leaves",
+      "color": "#616161",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": true
+    },
+    {
+      "name": "minecraft:spruce_leaves",
+      "color": "#587458",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": false
+    },
+    {
+      "name": "minecraft:birch_leaves",
+      "color": "#64784F",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": false
+    },
+    {
+      "name": "minecraft:jungle_leaves",
+      "color": "#6d6b64",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": true
+    },
+    {
+      "name": "minecraft:acacia_leaves",
+      "color": "#565656",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": true
+    },
+    {
+      "name": "minecraft:dark_oak_leaves",
+      "color": "#696969",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": true
+    },
+    {
+      "name": "minecraft:azalea_leaves",
+      "color": "#5a732c",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": false
+    },
+    {
+      "name": "minecraft:flowering_azalea_leaves",
+      "color": "#646f3d",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": false
+    },
+    {
+      "name": "minecraft:mangrove_leaves",
+      "color": "#6a6a6a",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": true
+    },
+    {
+      "name": "minecraft:cherry_leaves",
+      "color": "#e5adc2",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": false
+    },
+    {
+      "name": "minecraft:pale_oak_leaves",
+      "color": "#757a73",
+      "transparent": true,
+      "rendercube": true,
+      "biomeFoliage": false
+    },
+    {
+      "name": "minecraft:sponge",
+      "color": "#c3c455"
+    },
+    {
+      "name": "minecraft:wet_sponge",
+      "color": "#a09f3f"
+    },
+    {
+      "name": "minecraft:glass",
+      "color": "#daf1f4",
+      "alpha": 0.28,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:lapis_ore",
+      "color": "#1b43ad"
+    },
+    {
+      "name": "minecraft:deepslate_lapis_ore",
+      "color": "#1b43ad"
+    },
+    {
+      "name": "minecraft:lapis_block",
+      "color": "#27438a"
+    },
+    {
+      "name": "minecraft:dispenser",
+      "color": "#848484"
+    },
+    {
+      "name": "minecraft:sandstone",
+      "color": "#dad29f"
+    },
+    {
+      "name": "minecraft:sandstone_slab",
+      "color": "#e4dca6",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:sandstone_stairs",
+      "color": "#cfc797",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:sandstone_wall",
+      "color": "#dad29f",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:chiseled_sandstone",
+      "color": "#d8d09b"
+    },
+    {
+      "name": "minecraft:cut_sandstone",
+      "color": "#dcd4a2"
+    },
+    {
+      "name": "minecraft:cut_sandstone_slab",
+      "color": "#d1c999",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cut_sandstone_stairs",
+      "color": "#e7deaa",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:note_block",
+      "color": "#654433"
+    },
+    {
+      "name": "minecraft:bed",
+      "color": "#8c1616",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:white_bed",
+      "color": "#eaeaea",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:orange_bed",
+      "color": "#db7b3b",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:magenta_bed",
+      "color": "#af44b8",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_blue_bed",
+      "color": "#7e99d0",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:yellow_bed",
+      "color": "#bcb02a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:lime_bed",
+      "color": "#44b93b",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pink_bed",
+      "color": "#d28a9e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:gray_bed",
+      "color": "#454545",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_gray_bed",
+      "color": "#909898",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cyan_bed",
+      "color": "#30728e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:purple_bed",
+      "color": "#7737ad",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:blue_bed",
+      "color": "#2b3585",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:brown_bed",
+      "color": "#563822",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:green_bed",
+      "color": "#314119",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:red_bed",
+      "color": "#91312f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:black_bed",
+      "color": "#1d1b1b",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:powered_rail",
+      "color": "#846c48",
+      "transparent": true,
+      "spawninside": true,
+      "variants": [
+        {
+          "blockstate": "powered:true",
+          "color": "#9a6947"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:detector_rail",
+      "color": "#786559",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true,
+      "variants": [
+        {
+          "blockstate": "powered:true",
+          "color": "#895d50"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:sticky_piston",
+      "color": "#6b665f",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "up:true",
+          "color": "#8e9264"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cobweb",
+      "color": "#dcdcdc",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:grass",
+      "color": "#888888",
+      "biomeGrass": true,
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:short_grass",
+      "color": "#888888",
+      "biomeGrass": true,
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:fern",
+      "color": "#787878",
+      "biomeGrass": true,
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:dead_bush",
+      "color": "#7c5019",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true,
+      "alpha": 0.3
+    },
+    {
+      "name": "minecraft:seagrass",
+      "color": "#337f08",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:tall_seagrass",
+      "color": "#3b8b0e",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:piston",
+      "color": "#6b665f",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "up:true",
+          "color": "#9a815a"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:piston_head",
+      "color": "#9a815a",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:sticky",
+          "color": "#8e9264"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:white_wool",
+      "color": "#eaeced"
+    },
+    {
+      "name": "minecraft:orange_wool",
+      "color": "#f17614"
+    },
+    {
+      "name": "minecraft:magenta_wool",
+      "color": "#be45b4"
+    },
+    {
+      "name": "minecraft:light_blue_wool",
+      "color": "#3aafd9"
+    },
+    {
+      "name": "minecraft:yellow_wool",
+      "color": "#f9c628"
+    },
+    {
+      "name": "minecraft:lime_wool",
+      "color": "#70b91a"
+    },
+    {
+      "name": "minecraft:pink_wool",
+      "color": "#ee8dac"
+    },
+    {
+      "name": "minecraft:gray_wool",
+      "color": "#3f4448"
+    },
+    {
+      "name": "minecraft:light_gray_wool",
+      "color": "#8e8e87"
+    },
+    {
+      "name": "minecraft:cyan_wool",
+      "color": "#158a91"
+    },
+    {
+      "name": "minecraft:purple_wool",
+      "color": "#7a2aad"
+    },
+    {
+      "name": "minecraft:blue_wool",
+      "color": "#35399d"
+    },
+    {
+      "name": "minecraft:brown_wool",
+      "color": "#724829"
+    },
+    {
+      "name": "minecraft:green_wool",
+      "color": "#556e1c"
+    },
+    {
+      "name": "minecraft:red_wool",
+      "color": "#a12723"
+    },
+    {
+      "name": "minecraft:black_wool",
+      "color": "#15151a"
+    },
+    {
+      "name": "minecraft:moving_piston",
+      "color": "#b4905a"
+    },
+    {
+      "name": "minecraft:dandelion",
+      "color": "#f1f902",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:poppy",
+      "color": "#ba050b",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:blue_orchid",
+      "color": "#29aefb",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:allium",
+      "color": "#b865fb",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:azure_bluet",
+      "color": "#e4eaf2",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:red_tulip",
+      "color": "#d33a17",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:orange_tulip",
+      "color": "#de731f",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:white_tulip",
+      "color": "#e7e7e7",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:pink_tulip",
+      "color": "#eabeea",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:oxeye_daisy",
+      "color": "#eae6ad",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:cornflower",
+      "color": "#466aeb",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:wither_rose",
+      "color": "#42352e",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:lily_of_the_valley",
+      "color": "#ffffff",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:brown_mushroom",
+      "color": "#cbab79",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:red_mushroom",
+      "color": "#c33638",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:gold_block",
+      "color": "#f9ec4f"
+    },
+    {
+      "name": "minecraft:iron_block",
+      "color": "#dbdbdb"
+    },
+    {
+      "name": "minecraft:bricks",
+      "color": "#936457"
+    },
+    {
+      "name": "minecraft:brick_slab",
+      "color": "#9a695b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:brick_stairs",
+      "color": "#8b5f52",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:brick_wall",
+      "color": "#936457",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:tnt",
+      "color": "#82412f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:bookshelf",
+      "color": "#6c583a"
+    },
+    {
+      "name": "minecraft:chiseled_bookshelf",
+      "color": "#b29159"
+    },
+    {
+      "name": "minecraft:mossy_cobblestone",
+      "color": "#687968"
+    },
+    {
+      "name": "minecraft:mossy_cobblestone_slab",
+      "color": "#737c63",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mossy_cobblestone_stairs",
+      "color": "#68715a",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mossy_cobblestone_wall",
+      "color": "#687968",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:obsidian",
+      "color": "#14121e"
+    },
+    {
+      "name": "minecraft:torch",
+      "color": "#ffd800",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:wall_torch",
+      "color": "#ffd800",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:fire",
+      "color": "#ff8f00",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:spawner",
+      "color": "#1a2831",
+      "transparent": true,
+      "rendercube": true
+    },
+    {
+      "name": "minecraft:oak_stairs",
+      "color": "#95794b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:chest",
+      "color": "#976b20",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:redstone_wire",
+      "color": "#d60000",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:diamond_ore",
+      "color": "#5decf5"
+    },
+    {
+      "name": "minecraft:deepslate_diamond_ore",
+      "color": "#5decf5"
+    },
+    {
+      "name": "minecraft:diamond_block",
+      "color": "#62dbd6"
+    },
+    {
+      "name": "minecraft:crafting_table",
+      "color": "#6b472b"
+    },
+    {
+      "name": "minecraft:barrel",
+      "color": "#6c5132",
+      "variants": [
+        {
+          "blockstate": "facing:up",
+          "color": "#87653a"
+        },
+        {
+          "blockstate": "facing:down",
+          "color": "#7a5a34"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:bell",
+      "color": "#fdeb6f"
+    },
+    {
+      "name": "minecraft:blast_furnace",
+      "color": "#515051"
+    },
+    {
+      "name": "minecraft:cartography_table",
+      "color": "#685743"
+    },
+    {
+      "name": "minecraft:fletching_table",
+      "color": "#c5b485"
+    },
+    {
+      "name": "minecraft:grindstone",
+      "color": "#8e8e8e"
+    },
+    {
+      "name": "minecraft:lectern",
+      "color": "#ae8a53"
+    },
+    {
+      "name": "minecraft:loom",
+      "color": "#8e775c"
+    },
+    {
+      "name": "minecraft:smithing_table",
+      "color": "#393b47"
+    },
+    {
+      "name": "minecraft:smoker",
+      "color": "#555351"
+    },
+    {
+      "name": "minecraft:stonecutter",
+      "color": "#7b776f"
+    },
+    {
+      "name": "minecraft:composter",
+      "color": "#996334",
+      "variants": [
+        {
+          "blockstate": "level:8",
+          "color": "#755d38"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:immature_wheat",
+      "color": "#8ba803",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:wheat",
+      "color": "#576608",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "age:6",
+          "color": "#507707"
+        },
+        {
+          "blockstate": "age:5",
+          "color": "#427b08"
+        },
+        {
+          "blockstate": "age:4",
+          "color": "#2e8008"
+        },
+        {
+          "blockstate": "age:3",
+          "color": "#268c09"
+        },
+        {
+          "blockstate": "age:2",
+          "color": "#1d8a0c"
+        },
+        {
+          "blockstate": "age:1",
+          "color": "#13ac10"
+        },
+        {
+          "blockstate": "age:0",
+          "color": "#01b312"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:wet_farmland",
+      "color": "#43240b",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:farmland",
+      "color": "#4b290e",
+      "variants": [
+        {
+          "blockstate": "moisture:0",
+          "color": "#734c2d"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:furnace",
+      "color": "#606060"
+    },
+    {
+      "name": "minecraft:campfire",
+      "color": "#4f4b44",
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#db9e3a"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:sign",
+      "color": "#9d804f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:oak_sign",
+      "color": "#9d804f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:oak_hanging_sign",
+      "color": "#9d804f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:spruce_sign",
+      "color": "#684e2f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:spruce_hanging_sign",
+      "color": "#684e2f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:birch_sign",
+      "color": "#c4b37b",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:birch_hanging_sign",
+      "color": "#c4b37b",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:jungle_sign",
+      "color": "#9a6e4d",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:jungle_hanging_sign",
+      "color": "#9a6e4d",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:acacia_sign",
+      "color": "#a95c33",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:acacia_hanging_sign",
+      "color": "#a95c33",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:dark_oak_sign",
+      "color": "#3d2812",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:dark_oak_hanging_sign",
+      "color": "#3d2812",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:oak_door",
+      "color": "#876734",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:ladder",
+      "color": "#795f35",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:scaffolding",
+      "color": "#af8650",
+      "alpha": 0.95,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:rail",
+      "color": "#7c6e56",
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:wall_sign",
+      "color": "#9d804f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:oak_wall_sign",
+      "color": "#9d804f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:oak_wall_hanging_sign",
+      "color": "#9d804f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:spruce_wall_sign",
+      "color": "#684e2f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:spruce_wall_hanging_sign",
+      "color": "#684e2f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:birch_wall_sign",
+      "color": "#c4b37b",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:birch_wall_hanging_sign",
+      "color": "#c4b37b",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:jungle_wall_sign",
+      "color": "#9a6e4d",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:jungle_wall_hanging_sign",
+      "color": "#9a6e4d",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:acacia_wall_sign",
+      "color": "#a95c33",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:acacia_wall_hanging_sign",
+      "color": "#a95c33",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:dark_oak_wall_sign",
+      "color": "#3d2812",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:dark_oak_wall_hanging_sign",
+      "color": "#3d2812",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:lever",
+      "color": "#6a5940",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:stone_pressure_plate",
+      "color": "#7d7d7d",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:iron_door",
+      "color": "#bbbbbb",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:oak_pressure_plate",
+      "color": "#9d804f",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:spruce_pressure_plate",
+      "color": "#684e2f",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:birch_pressure_plate",
+      "color": "#c4b37b",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:jungle_pressure_plate",
+      "color": "#9a6e4d",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:acacia_pressure_plate",
+      "color": "#a95c33",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:dark_oak_pressure_plate",
+      "color": "#3d2812",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:redstone_ore",
+      "color": "#8f0303"
+    },
+    {
+      "name": "minecraft:deepslate_redstone_ore",
+      "color": "#8f0303"
+    },
+    {
+      "name": "minecraft:redstone_torch",
+      "color": "#5d3f26",
+      "transparent": true,
+      "canprovidepower": true,
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#ff4c29"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:redstone_wall_torch",
+      "color": "#5d3f26",
+      "transparent": true,
+      "canprovidepower": true,
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#ff4c29"
+        }
+      ]
+
+    },
+    {
+      "name": "minecraft:stone_button",
+      "color": "#838383",
+      "alpha": 0.25,
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:snow",
+      "color": "#f0fbfb",
+      "spawninside": true,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:ice",
+      "color": "#7dadff",
+      "alpha": 0.62,
+      "transparent": true,
+      "rendercube": true
+    },
+    {
+      "name": "minecraft:snow_block",
+      "color": "#f0fbfb"
+    },
+    {
+      "name": "minecraft:cactus",
+      "color": "#0d6418",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:clay",
+      "color": "#9fa4b1"
+    },
+    {
+      "name": "minecraft:sugar_cane",
+      "color": "#95c165",
+      "biomeGrass": true,
+      "spawninside": true,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:jukebox",
+      "color": "#6b4937"
+    },
+    {
+      "name": "minecraft:oak_fence",
+      "color": "#9d804f",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pumpkin",
+      "color": "#c17615"
+    },
+    {
+      "name": "minecraft:netherrack",
+      "color": "#6f3635"
+    },
+    {
+      "name": "minecraft:soul_sand",
+      "color": "#554034"
+    },
+    {
+      "name": "minecraft:glowstone",
+      "color": "#907646"
+    },
+    {
+      "name": "minecraft:nether_portal",
+      "color": "#5a0cc1",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:carved_pumpkin",
+      "color": "#8e4d0d"
+    },
+    {
+      "name": "minecraft:jack_o_lantern",
+      "color": "#b9851c"
+    },
+    {
+      "name": "minecraft:lantern",
+      "color": "#6a5b54",
+      "transparent": true,
+      "alpha": 0.75
+    },
+    {
+      "name": "minecraft:cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:white_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:orange_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:magenta_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_blue_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:yellow_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:lime_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pink_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:gray_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_gray_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cyan_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:purple_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:blue_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:brown_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:green_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:red_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:black_candle_cake",
+      "color": "#e5cecf",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:repeater",
+      "color": "#979393",
+      "transparent": true,
+      "canprovidepower": true,
+      "variants": [
+        {
+          "blockstate": "powered:true",
+          "color": "#ff9393"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:white_stained_glass",
+      "color": "#ffffff",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:orange_stained_glass",
+      "color": "#d87f33",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:magenta_stained_glass",
+      "color": "#b24cd8",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:light_blue_stained_glass",
+      "color": "#6699d8",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:yellow_stained_glass",
+      "color": "#e5e533",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:lime_stained_glass",
+      "color": "#7fcc19",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:pink_stained_glass",
+      "color": "#f27fa5",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:gray_stained_glass",
+      "color": "#4c4c4c",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:light_gray_stained_glass",
+      "color": "#999999",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:cyan_stained_glass",
+      "color": "#4c7f99",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:purple_stained_glass",
+      "color": "#7f3fb2",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:blue_stained_glass",
+      "color": "#334cb2",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:brown_stained_glass",
+      "color": "#664c33",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:green_stained_glass",
+      "color": "#667f33",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:red_stained_glass",
+      "color": "#993333",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:black_stained_glass",
+      "color": "#191919",
+      "transparent": true,
+      "alpha": 0.5
+    },
+    {
+      "name": "minecraft:oak_trapdoor",
+      "color": "#7f5d2e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:spruce_trapdoor",
+      "color": "#644c31",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:birch_trapdoor",
+      "color": "#cfc29d",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:jungle_trapdoor",
+      "color": "#996e4d",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:acacia_trapdoor",
+      "color": "#9d5733",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:dark_oak_trapdoor",
+      "color": "#4b3217",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:infested_stone",
+      "color": "#838383"
+    },
+    {
+      "name": "minecraft:infested_cobblestone",
+      "color": "#7b7b7b"
+    },
+    {
+      "name": "minecraft:infested_stone_bricks",
+      "color": "#7a7a7a"
+    },
+    {
+      "name": "minecraft:infested_mossy_stone_bricks",
+      "color": "#73776a"
+    },
+    {
+      "name": "minecraft:infested_cracked_stone_bricks",
+      "color": "#777777"
+    },
+    {
+      "name": "minecraft:infested_chiseled_stone_bricks",
+      "color": "#777777"
+    },
+    {
+      "name": "minecraft:infested_deepslate",
+      "color": "#575759"
+    },
+    {
+      "name": "minecraft:stone_bricks",
+      "color": "#7a7a7a"
+    },
+    {
+      "name": "minecraft:stone_brick_slab",
+      "color": "#808080",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stone_brick_stairs",
+      "color": "#737373",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:stone_brick_wall",
+      "color": "#7a7a7a",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:mossy_stone_bricks",
+      "color": "#73776a"
+    },
+    {
+      "name": "minecraft:mossy_stone_brick_slab",
+      "color": "#787f6e",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mossy_stone_brick_stairs",
+      "color": "#6d7263",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mossy_stone_brick_wall",
+      "color": "#73776a",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cracked_stone_bricks",
+      "color": "#777777"
+    },
+    {
+      "name": "minecraft:chiseled_stone_bricks",
+      "color": "#777777"
+    },
+    {
+      "name": "minecraft:brown_mushroom_block",
+      "color": "#8e6b53",
+      "variants": [
+        {
+          "blockstate": "up:false",
+          "color": "#cbab79"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:red_mushroom_block",
+      "color": "#b72624",
+      "variants": [
+        {
+          "blockstate": "up:false",
+          "color": "#cbab79"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mushroom_stem",
+      "color": "#d0ccc2",
+      "variants": [
+        {
+          "blockstate": "up:false",
+          "color": "#cbab79"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:iron_bars",
+      "color": "#6e6c6a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:glass_pane",
+      "color": "#d4f0f4",
+      "alpha": 0.25,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:melon",
+      "color": "#979a25"
+    },
+    {
+      "name": "minecraft:attached_pumpkin_stem",
+      "color": "#6b6b0b",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:attached_melon_stem",
+      "color": "#8b8b8b",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pumpkin_stem",
+      "color": "#9a9a9a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:melon_stem",
+      "color": "#9a9a9a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:vine",
+      "color": "#6f6f6f",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true,
+      "biomeFoliage": true
+    },
+    {
+      "name": "minecraft:oak_fence_gate",
+      "color": "#9d804f",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:mycelium",
+      "color": "#6f6469"
+    },
+    {
+      "name": "minecraft:lily_pad",
+      "color": "#88bf54",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:nether_bricks",
+      "color": "#2d171b"
+    },
+    {
+      "name": "minecraft:nether_brick_fence",
+      "color": "#2d171b",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:nether_brick_slab",
+      "color": "#2f181c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:nether_brick_stairs",
+      "color": "#2a1519",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:nether_brick_wall",
+      "color": "#2d171b",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:nether_wart",
+      "color": "#6c0f17",
+      "variants": [
+        {
+          "blockstate": "age:0",
+          "color": "#6b0f1f"
+        },
+        {
+          "blockstate": "age:3",
+          "color": "#701311"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:enchanting_table",
+      "color": "#68403b",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:brewing_stand",
+      "color": "#7d6752",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cauldron",
+      "color": "#474747",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:lava_cauldron",
+      "color": "#8d502c",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:powder_snow_cauldron",
+      "color": "#9fa2a2",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:water_cauldron",
+      "color": "#474747",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:end_portal",
+      "color": "#0c0b0a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:end_portal_frame",
+      "color": "#597561",
+      "transparent": true,
+      "rendercube": true,
+      "variants": [
+        {
+          "blockstate": "eye:true",
+          "color": "#284843"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:end_stone",
+      "color": "#dde0a5"
+    },
+    {
+      "name": "minecraft:dragon_egg",
+      "color": "#0d0910"
+    },
+    {
+      "name": "minecraft:redstone_lamp",
+      "color": "#462b1b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "lit:on",
+          "color": "#926d44"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:immature_cocoa_pod",
+      "color": "#929943",
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:cocoa",
+      "color": "#d4924c"
+    },
+    {
+      "name": "minecraft:emerald_ore",
+      "color": "#17dd62"
+    },
+    {
+      "name": "minecraft:deepslate_emerald_ore",
+      "color": "#17dd62"
+    },
+    {
+      "name": "minecraft:ender_chest",
+      "color": "#2d4042",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:tripwire_hook",
+      "color": "#8b8172",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:tripwire",
+      "color": "#818181",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:emerald_block",
+      "color": "#51d975"
+    },
+    {
+      "name": "minecraft:spruce_stairs",
+      "color": "#624a2c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:birch_stairs",
+      "color": "#baaa74",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:jungle_stairs",
+      "color": "#926849",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:command_block",
+      "color": "#a8816b"
+    },
+    {
+      "name": "minecraft:beacon",
+      "color": "#75ddd8"
+    },
+    {
+      "name": "minecraft:flower_pot",
+      "color": "#774233",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_dandelion",
+      "color": "#f1f902",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_poppy",
+      "color": "#910205",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_blue_orchid",
+      "color": "#29aefb",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_allium",
+      "color": "#b865fb",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_azure_bluet",
+      "color": "#e4eaf2",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_red_tulip",
+      "color": "#d33a17",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_orange_tulip",
+      "color": "#de731f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_white_tulip",
+      "color": "#e7e7e7",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_pink_tulip",
+      "color": "#eabeea",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_oxeye_daisy",
+      "color": "#eae6ad",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_cornflower",
+      "color": "#466aeb",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_wither_rose",
+      "color": "#42352e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_lily_of_the_valley",
+      "color": "#ffffff",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_oak_sapling",
+      "color": "#408f2f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_spruce_sapling",
+      "color": "#395a39",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_birch_sapling",
+      "color": "#cfe3ba",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_jungle_sapling",
+      "color": "#2c6c18",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_acacia_sapling",
+      "color": "#946428",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_dark_oak_sapling",
+      "color": "#315e05",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_mangrove_propagule",
+      "color": "#60AF54",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_fern",
+      "color": "#315e05",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_dead_bush",
+      "color": "#946428",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_red_mushroom",
+      "color": "#9a171c",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_brown_mushroom",
+      "color": "#725643",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_cactus",
+      "color": "#128a20",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_bamboo",
+      "color": "#5c5924",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_crimson_roots",
+      "color": "#7e082a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_warped_roots",
+      "color": "#148a7c",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_crimson_fungus",
+      "color": "#8d2c1e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_warped_fungus",
+      "color": "#4a6d58",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_azalea_bush",
+      "color": "#667d30",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_flowering_azalea_bush",
+      "color": "#707a40",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_cherry_sapling",
+      "color": "#a4768f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_torchflower",
+      "color": "#e87272",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_pale_oak_sapling",
+      "color": "#6e6a64",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_closed_eyeblossom",
+      "color": "#6c6265",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:potted_open_eyeblossom",
+      "color": "#857d80",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:carrots",
+      "color": "#158002",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "age:2",
+          "color": "#01be11"
+        },
+        {
+          "blockstate": "age:1",
+          "color": "#01bb10"
+        },
+        {
+          "blockstate": "age:0",
+          "color": "#02ab10"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:potatoes",
+      "color": "#23ab24",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "age:6",
+          "color": "#01be11"
+        },
+        {
+          "blockstate": "age:5",
+          "color": "#01be11"
+        },
+        {
+          "blockstate": "age:4",
+          "color": "#01be11"
+        },
+        {
+          "blockstate": "age:3",
+          "color": "#01bb10"
+        },
+        {
+          "blockstate": "age:2",
+          "color": "#01bb10"
+        },
+        {
+          "blockstate": "age:1",
+          "color": "#02ab10"
+        },
+        {
+          "blockstate": "age:0",
+          "color": "#02ab10"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:oak_button",
+      "color": "#9d804f",
+      "alpha": 0.25,
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:spruce_button",
+      "color": "#684e2f",
+      "alpha": 0.25,
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:birch_button",
+      "color": "#c4b37b",
+      "alpha": 0.25,
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:jungle_button",
+      "color": "#9a6e4d",
+      "alpha": 0.25,
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:acacia_button",
+      "color": "#a95c33",
+      "alpha": 0.25,
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:dark_oak_button",
+      "color": "#3d2812",
+      "alpha": 0.25,
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:mob_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:skeleton_skull",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:skeleton_wall_skull",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:wither_skeleton_skull",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:wither_skeleton_wall_skull",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:zombie_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:zombie_wall_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:player_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:player_wall_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:creeper_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:creeper_wall_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:dragon_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:dragon_wall_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:piglin_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:piglin_wall_head",
+      "color": "#1a1a1a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:anvil",
+      "color": "#414141",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:chipped_anvil",
+      "color": "#403d3d",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:damaged_anvil",
+      "color": "#403d3d",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:trapped_chest",
+      "color": "#ab792d",
+      "transparent": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:light_weighted_pressure_plate",
+      "color": "#fdfb4f",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:heavy_weighted_pressure_plate",
+      "color": "#e6e6e6",
+      "transparent": true,
+      "spawninside": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:comparator",
+      "color": "#a69594",
+      "transparent": true,
+      "canprovidepower": true,
+      "variants": [
+        {
+          "blockstate": "powered:true",
+          "color": "#ff9594"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:daylight_detector",
+      "color": "#d2c1ab",
+      "transparent": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:redstone_block",
+      "color": "#ab1c09",
+      "transparent": true,
+      "canprovidepower": true
+    },
+    {
+      "name": "minecraft:nether_quartz_ore",
+      "color": "#ddcbbe"
+    },
+    {
+      "name": "minecraft:hopper",
+      "color": "#434343",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:quartz_block",
+      "color": "#ece9e2"
+    },
+    {
+      "name": "minecraft:chiseled_quartz_block",
+      "color": "#e8e4dc"
+    },
+    {
+      "name": "minecraft:quartz_pillar",
+      "color": "#e8e4dc",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#e9e6de"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:quartz_stairs",
+      "color": "#e0ddd6",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:activator_rail",
+      "color": "#685347",
+      "transparent": true,
+      "spawninside": true,
+      "variants": [
+        {
+          "blockstate": "powered:true",
+          "color": "#8e5146"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:dropper",
+      "color": "#848484"
+    },
+    {
+      "name": "minecraft:white_terracotta",
+      "color": "#d2b2a1"
+    },
+    {
+      "name": "minecraft:orange_terracotta",
+      "color": "#a25426"
+    },
+    {
+      "name": "minecraft:magenta_terracotta",
+      "color": "#96586d"
+    },
+    {
+      "name": "minecraft:light_blue_terracotta",
+      "color": "#716d8a"
+    },
+    {
+      "name": "minecraft:yellow_terracotta",
+      "color": "#ba8523"
+    },
+    {
+      "name": "minecraft:lime_terracotta",
+      "color": "#687635"
+    },
+    {
+      "name": "minecraft:pink_terracotta",
+      "color": "#a24e4f"
+    },
+    {
+      "name": "minecraft:gray_terracotta",
+      "color": "#3a2a24"
+    },
+    {
+      "name": "minecraft:light_gray_terracotta",
+      "color": "#876b62"
+    },
+    {
+      "name": "minecraft:cyan_terracotta",
+      "color": "#575b5b"
+    },
+    {
+      "name": "minecraft:purple_terracotta",
+      "color": "#764656"
+    },
+    {
+      "name": "minecraft:blue_terracotta",
+      "color": "#4a3c5b"
+    },
+    {
+      "name": "minecraft:brown_terracotta",
+      "color": "#4d3324"
+    },
+    {
+      "name": "minecraft:green_terracotta",
+      "color": "#4c532a"
+    },
+    {
+      "name": "minecraft:red_terracotta",
+      "color": "#8f3d2f"
+    },
+    {
+      "name": "minecraft:black_terracotta",
+      "color": "#251710"
+    },
+    {
+      "name": "minecraft:white_stained_glass_pane",
+      "color": "#f6f6f6",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:orange_stained_glass_pane",
+      "color": "#d17b31",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:magenta_stained_glass_pane",
+      "color": "#ab4ad1",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_blue_stained_glass_pane",
+      "color": "#6293d1",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:yellow_stained_glass_pane",
+      "color": "#dddd31",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:lime_stained_glass_pane",
+      "color": "#7bc518",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pink_stained_glass_pane",
+      "color": "#e97ba0",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:gray_stained_glass_pane",
+      "color": "#4a4a4a",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_gray_stained_glass_pane",
+      "color": "#939393",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cyan_stained_glass_pane",
+      "color": "#4a7b93",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:purple_stained_glass_pane",
+      "color": "#7b3dab",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:blue_stained_glass_pane",
+      "color": "#314aab",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:brown_stained_glass_pane",
+      "color": "#624a31",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:green_stained_glass_pane",
+      "color": "#627b31",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:red_stained_glass_pane",
+      "color": "#933131",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:black_stained_glass_pane",
+      "color": "#181818",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:acacia_stairs",
+      "color": "#a05730",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:dark_oak_stairs",
+      "color": "#392611",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:slime_block",
+      "color": "#79c865"
+    },
+    {
+      "name": "minecraft:barrier",
+      "color": "#000000",
+      "alpha": 0
+    },
+    {
+      "name": "minecraft:iron_trapdoor",
+      "color": "#c8c8c8",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:prismarine",
+      "color": "#64988e"
+    },
+    {
+      "name": "minecraft:prismarine_slab",
+      "color": "#699f8a",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:prismarine_stairs",
+      "color": "#5f907d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:prismarine_wall",
+      "color": "#64988e",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:prismarine_bricks",
+      "color": "#64a08f"
+    },
+    {
+      "name": "minecraft:prismarine_brick_slab",
+      "color": "#69a896",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:prismarine_brick_stairs",
+      "color": "#5f9887",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:dark_prismarine",
+      "color": "#345c4c"
+    },
+    {
+      "name": "minecraft:dark_prismarine_slab",
+      "color": "#36604f",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:dark_prismarine_stairs",
+      "color": "#315748",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:sea_lantern",
+      "color": "#acc8be"
+    },
+    {
+      "name": "minecraft:hay_block",
+      "color": "#9e7512",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#a98c10"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:white_carpet",
+      "color": "#eaeced",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:orange_carpet",
+      "color": "#f17614",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:magenta_carpet",
+      "color": "#be45b4",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_blue_carpet",
+      "color": "#3aafd9",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:yellow_carpet",
+      "color": "#f9c628",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:lime_carpet",
+      "color": "#70b91a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pink_carpet",
+      "color": "#ee8dac",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:gray_carpet",
+      "color": "#3f4448",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_gray_carpet",
+      "color": "#8e8e87",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cyan_carpet",
+      "color": "#158a91",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:purple_carpet",
+      "color": "#7a2aad",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:blue_carpet",
+      "color": "#35399d",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:brown_carpet",
+      "color": "#724829",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:green_carpet",
+      "color": "#556e1c",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:red_carpet",
+      "color": "#a12723",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:black_carpet",
+      "color": "#15151a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:terracotta",
+      "color": "#975d43"
+    },
+    {
+      "name": "minecraft:coal_block",
+      "color": "#131313"
+    },
+    {
+      "name": "minecraft:packed_ice",
+      "color": "#a5c3f5"
+    },
+    {
+      "name": "minecraft:sunflower",
+      "color": "#f1e424",
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:lilac",
+      "color": "#9f78a4",
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:tall_grass",
+      "color": "#969696",
+      "biomeGrass": true,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:large_fern",
+      "color": "#828282",
+      "biomeGrass": true,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:rose_bush",
+      "color": "#ba050b",
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:peony",
+      "color": "#e6bff7",
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:large_flower_(top_part)",
+      "color": "#ffffff",
+      "alpha": 0
+    },
+    {
+      "name": "minecraft:white_banner",
+      "color": "#eaeced",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:orange_banner",
+      "color": "#f17614",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:magenta_banner",
+      "color": "#be45b4",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_blue_banner",
+      "color": "#3aafd9",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:yellow_banner",
+      "color": "#f9c628",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:lime_banner",
+      "color": "#70b91a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pink_banner",
+      "color": "#ee8dac",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:gray_banner",
+      "color": "#3f4448",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_gray_banner",
+      "color": "#8e8e87",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cyan_banner",
+      "color": "#158a91",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:purple_banner",
+      "color": "#7a2aad",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:blue_banner",
+      "color": "#35399d",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:brown_banner",
+      "color": "#724829",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:green_banner",
+      "color": "#556e1c",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:red_banner",
+      "color": "#a12723",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:black_banner",
+      "color": "#15151a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:white_wall_banner",
+      "color": "#eaeced",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:orange_wall_banner",
+      "color": "#f17614",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:magenta_wall_banner",
+      "color": "#be45b4",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_blue_wall_banner",
+      "color": "#3aafd9",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:yellow_wall_banner",
+      "color": "#f9c628",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:lime_wall_banner",
+      "color": "#70b91a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pink_wall_banner",
+      "color": "#ee8dac",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:gray_wall_banner",
+      "color": "#3f4448",
+      "transparent": true
+    },
+
+    {
+      "name": "minecraft:light_gray_wall_banner",
+      "color": "#8e8e87",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cyan_wall_banner",
+      "color": "#158a91",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:purple_wall_banner",
+      "color": "#7a2aad",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:blue_wall_banner",
+      "color": "#35399d",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:brown_wall_banner",
+      "color": "#724829",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:green_wall_banner",
+      "color": "#556e1c",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:red_wall_banner",
+      "color": "#a12723",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:black_wall_banner",
+      "color": "#15151a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:red_sandstone",
+      "color": "#a6551e"
+    },
+    {
+      "name": "minecraft:red_sandstone_slab",
+      "color": "#af591f",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:red_sandstone_stairs",
+      "color": "#9e501c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:red_sandstone_wall",
+      "color": "#a6551e",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:chiseled_red_sandstone",
+      "color": "#a2531c"
+    },
+    {
+      "name": "minecraft:cut_red_sandstone",
+      "color": "#a8561f"
+    },
+    {
+      "name": "minecraft:cut_red_sandstone_slab",
+      "color": "#9f511d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cut_red_sandstone_stairs",
+      "color": "#b05a20",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:oak_slab",
+      "color": "#a48652",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:spruce_slab",
+      "color": "#6d5131",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:birch_slab",
+      "color": "#cdbb81",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:jungle_slab",
+      "color": "#a17350",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:acacia_slab",
+      "color": "#b16035",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:dark_oak_slab",
+      "color": "#402a12",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:petrified_oak_slab",
+      "color": "#a48050",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:quartz_slab",
+      "color": "#f7f4ed",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:purpur_slab",
+      "color": "#ae80ae",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:smooth_stone",
+      "color": "#d9d9d9"
+    },
+    {
+      "name": "minecraft:smooth_stone_stairs",
+      "color": "#979797",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:smooth_stone_slab",
+      "color": "#a6a6a6",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:smooth_sandstone",
+      "color": "#d9d29a"
+    },
+    {
+      "name": "minecraft:smooth_sandstone_slab",
+      "color": "#ebe0b2",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:smooth_sandstone_stairs",
+      "color": "#d4cba1",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:smooth_red_sandstone",
+      "color": "#a8561e"
+    },
+    {
+      "name": "minecraft:smooth_red_sandstone_slab",
+      "color": "#c4671e",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:smooth_red_sandstone_stairs",
+      "color": "#b15e1b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:smooth_quartz",
+      "color": "#edebe5"
+    },
+    {
+      "name": "minecraft:smooth_quartz_stairs",
+      "color": "#e0dad3",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:smooth_quartz_slab",
+      "color": "#f7f1ea",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:spruce_fence_gate",
+      "color": "#684e2f",
+      "alpha": 0.60,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:birch_fence_gate",
+      "color": "#c4b37b",
+      "alpha": 0.60,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:jungle_fence_gate",
+      "color": "#9a6e4d",
+      "alpha": 0.60,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:acacia_fence_gate",
+      "color": "#a95c33",
+      "alpha": 0.60,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:dark_oak_fence_gate",
+      "color": "#3d2812",
+      "alpha": 0.60,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:spruce_fence",
+      "color": "#684e2f",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:birch_fence",
+      "color": "#c4b37b",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:jungle_fence",
+      "color": "#9a6e4d",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:acacia_fence",
+      "color": "#a95c33",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:dark_oak_fence",
+      "color": "#3d2812",
+      "alpha": 0.75,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:spruce_door",
+      "color": "#604b31",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:birch_door",
+      "color": "#dad2b0",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:jungle_door",
+      "color": "#9d7355",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:acacia_door",
+      "color": "#a15d3a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:dark_oak_door",
+      "color": "#463019",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:end_rod",
+      "color": "#dcc6ce"
+    },
+    {
+      "name": "minecraft:chorus_plant",
+      "color": "#603c60",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:chorus_flower",
+      "color": "#866886",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "age:5",
+          "color": "#624060"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:purpur_block",
+      "color": "#a67aa6"
+    },
+    {
+      "name": "minecraft:purpur_pillar",
+      "color": "#aa7eaa",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#ab80ab"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:purpur_stairs",
+      "color": "#9d739d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:end_stone_bricks",
+      "color": "#e2e7ab"
+    },
+    {
+      "name": "minecraft:end_stone_brick_slab",
+      "color": "#e4ebaa",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:end_stone_brick_stairs",
+      "color": "#cfd499",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:end_stone_brick_wall",
+      "color": "#e2e7ab",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:beetroots",
+      "color": "#517136",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "age:2",
+          "color": "#01be11"
+        },
+        {
+          "blockstate": "age:1",
+          "color": "#01bb10"
+        },
+        {
+          "blockstate": "age:0",
+          "color": "#02ab10"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:sweet_berry_bush",
+      "color": "#444e33",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "age:2",
+          "color": "#3c5838"
+        },
+        {
+          "blockstate": "age:1",
+          "color": "#305e3a"
+        },
+        {
+          "blockstate": "age:0",
+          "color": "#2b5a38"
+        }
+      ]
+    },
+    {
+      "comment": "old name before 1.17",
+      "name": "minecraft:grass_path",
+      "color": "#967d47"
+    },
+    {
+      "comment": "renamed with 1.17",
+      "name": "minecraft:dirt_path",
+      "color": "#967d47"
+    },
+    {
+      "name": "minecraft:end_gateway",
+      "color": "#000000"
+    },
+    {
+      "name": "minecraft:repeating_command_block",
+      "color": "#7a69a8"
+    },
+    {
+      "name": "minecraft:chain_command_block",
+      "color": "#7f9b90"
+    },
+    {
+      "name": "minecraft:frosted_ice",
+      "color": "#7dadff",
+      "alpha": 0.63,
+      "transparent": true,
+      "rendercube": true
+    },
+    {
+      "name": "minecraft:magma_block",
+      "color": "#87421a"
+    },
+    {
+      "name": "minecraft:nether_wart_block",
+      "color": "#750607"
+    },
+    {
+      "name": "minecraft:red_nether_bricks",
+      "color": "#440407"
+    },
+    {
+      "name": "minecraft:red_nether_brick_slab",
+      "color": "#490709",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:red_nether_brick_stairs",
+      "color": "#420608",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:red_nether_brick_wall",
+      "color": "#440407",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:bone_block",
+      "color": "#e1ddc9",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#cec9b2"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:observer",
+      "color": "#616161"
+    },
+    {
+      "name": "minecraft:shulker_box",
+      "color": "#8b618b"
+    },
+    {
+      "name": "minecraft:white_shulker_box",
+      "color": "#d8dddd"
+    },
+    {
+      "name": "minecraft:orange_shulker_box",
+      "color": "#ea6a09"
+    },
+    {
+      "name": "minecraft:magenta_shulker_box",
+      "color": "#ae36a4"
+    },
+    {
+      "name": "minecraft:light_blue_shulker_box",
+      "color": "#31a4d4"
+    },
+    {
+      "name": "minecraft:yellow_shulker_box",
+      "color": "#f8bd1d"
+    },
+    {
+      "name": "minecraft:lime_shulker_box",
+      "color": "#64ad17"
+    },
+    {
+      "name": "minecraft:pink_shulker_box",
+      "color": "#e67a9e"
+    },
+    {
+      "name": "minecraft:gray_shulker_box",
+      "color": "#373b3e"
+    },
+    {
+      "name": "minecraft:light_gray_shulker_box",
+      "color": "#7c7c73"
+    },
+    {
+      "name": "minecraft:cyan_shulker_box",
+      "color": "#147987"
+    },
+    {
+      "name": "minecraft:purple_shulker_box",
+      "color": "#67209c"
+    },
+    {
+      "name": "minecraft:blue_shulker_box",
+      "color": "#2c2e8c"
+    },
+    {
+      "name": "minecraft:brown_shulker_box",
+      "color": "#6a4224"
+    },
+    {
+      "name": "minecraft:green_shulker_box",
+      "color": "#4f6520"
+    },
+    {
+      "name": "minecraft:red_shulker_box",
+      "color": "#8c1f1e"
+    },
+    {
+      "name": "minecraft:black_shulker_box",
+      "color": "#19191e"
+    },
+    {
+      "name": "minecraft:white_glazed_terracotta",
+      "color": "#bdd4cb"
+    },
+    {
+      "name": "minecraft:orange_glazed_terracotta",
+      "color": "#9b935c"
+    },
+    {
+      "name": "minecraft:magenta_glazed_terracotta",
+      "color": "#d064c0"
+    },
+    {
+      "name": "minecraft:light_blue_glazed_terracotta",
+      "color": "#5fa5d1"
+    },
+    {
+      "name": "minecraft:yellow_glazed_terracotta",
+      "color": "#eac059"
+    },
+    {
+      "name": "minecraft:lime_glazed_terracotta",
+      "color": "#a3c637"
+    },
+    {
+      "name": "minecraft:pink_glazed_terracotta",
+      "color": "#eb9bb6"
+    },
+    {
+      "name": "minecraft:gray_glazed_terracotta",
+      "color": "#535a5e"
+    },
+    {
+      "name": "minecraft:light_gray_glazed_terracotta",
+      "color": "#90a6a8"
+    },
+    {
+      "name": "minecraft:cyan_glazed_terracotta",
+      "color": "#34777d"
+    },
+    {
+      "name": "minecraft:purple_glazed_terracotta",
+      "color": "#6e3098"
+    },
+    {
+      "name": "minecraft:blue_glazed_terracotta",
+      "color": "#2f418b"
+    },
+    {
+      "name": "minecraft:brown_glazed_terracotta",
+      "color": "#786a56"
+    },
+    {
+      "name": "minecraft:green_glazed_terracotta",
+      "color": "#758e43"
+    },
+    {
+      "name": "minecraft:red_glazed_terracotta",
+      "color": "#b63c35"
+    },
+    {
+      "name": "minecraft:black_glazed_terracotta",
+      "color": "#441e20"
+    },
+    {
+      "name": "minecraft:white_concrete",
+      "color": "#cfd5d6"
+    },
+    {
+      "name": "minecraft:orange_concrete",
+      "color": "#e06101"
+    },
+    {
+      "name": "minecraft:magenta_concrete",
+      "color": "#a9309f"
+    },
+    {
+      "name": "minecraft:light_blue_concrete",
+      "color": "#2489c7"
+    },
+    {
+      "name": "minecraft:yellow_concrete",
+      "color": "#f1af15"
+    },
+    {
+      "name": "minecraft:lime_concrete",
+      "color": "#5ea918"
+    },
+    {
+      "name": "minecraft:pink_concrete",
+      "color": "#d6658f"
+    },
+    {
+      "name": "minecraft:gray_concrete",
+      "color": "#373a3e"
+    },
+    {
+      "name": "minecraft:light_gray_concrete",
+      "color": "#7d7d73"
+    },
+    {
+      "name": "minecraft:cyan_concrete",
+      "color": "#157788"
+    },
+    {
+      "name": "minecraft:purple_concrete",
+      "color": "#64209c"
+    },
+    {
+      "name": "minecraft:blue_concrete",
+      "color": "#2d2f8f"
+    },
+    {
+      "name": "minecraft:brown_concrete",
+      "color": "#603c20"
+    },
+    {
+      "name": "minecraft:green_concrete",
+      "color": "#495b24"
+    },
+    {
+      "name": "minecraft:red_concrete",
+      "color": "#8e2121"
+    },
+    {
+      "name": "minecraft:black_concrete",
+      "color": "#080a0f"
+    },
+    {
+      "name": "minecraft:white_concrete_powder",
+      "color": "#e2e3e4"
+    },
+    {
+      "name": "minecraft:orange_concrete_powder",
+      "color": "#e38420"
+    },
+    {
+      "name": "minecraft:magenta_concrete_powder",
+      "color": "#c154b9"
+    },
+    {
+      "name": "minecraft:light_blue_concrete_powder",
+      "color": "#4ab5d5"
+    },
+    {
+      "name": "minecraft:yellow_concrete_powder",
+      "color": "#e9c737"
+    },
+    {
+      "name": "minecraft:lime_concrete_powder",
+      "color": "#7dbd2a"
+    },
+    {
+      "name": "minecraft:pink_concrete_powder",
+      "color": "#e599b5"
+    },
+    {
+      "name": "minecraft:gray_concrete_powder",
+      "color": "#4d5155"
+    },
+    {
+      "name": "minecraft:light_gray_concrete_powder",
+      "color": "#9b9b94"
+    },
+    {
+      "name": "minecraft:cyan_concrete_powder",
+      "color": "#25949d"
+    },
+    {
+      "name": "minecraft:purple_concrete_powder",
+      "color": "#8438b2"
+    },
+    {
+      "name": "minecraft:blue_concrete_powder",
+      "color": "#4649a7"
+    },
+    {
+      "name": "minecraft:brown_concrete_powder",
+      "color": "#7e5536"
+    },
+    {
+      "name": "minecraft:green_concrete_powder",
+      "color": "#61772d"
+    },
+    {
+      "name": "minecraft:red_concrete_powder",
+      "color": "#a83633"
+    },
+    {
+      "name": "minecraft:black_concrete_powder",
+      "color": "#191b20"
+    },
+    {
+      "name": "minecraft:kelp",
+      "color": "#578c2d",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:kelp_plant",
+      "color": "#57822b",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:dried_kelp_block",
+      "color": "#323b27"
+    },
+    {
+      "name": "minecraft:turtle_egg",
+      "color": "#e4e3c0",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:brain_coral",
+      "color": "#c65598"
+    },
+    {
+      "name": "minecraft:bubble_coral",
+      "color": "#a118a0"
+    },
+    {
+      "name": "minecraft:fire_coral",
+      "color": "#a7262f"
+    },
+    {
+      "name": "minecraft:horn_coral",
+      "color": "#d1ba3f"
+    },
+    {
+      "name": "minecraft:tube_coral",
+      "color": "#3053c5"
+    },
+    {
+      "name": "minecraft:dead_brain_coral",
+      "color": "#867d79"
+    },
+    {
+      "name": "minecraft:dead_bubble_coral",
+      "color": "#857d79"
+    },
+    {
+      "name": "minecraft:dead_fire_coral",
+      "color": "#89807c"
+    },
+    {
+      "name": "minecraft:dead_horn_coral",
+      "color": "#8f8782"
+    },
+    {
+      "name": "minecraft:dead_tube_coral",
+      "color": "#766f6c"
+    },
+    {
+      "name": "minecraft:brain_coral_block",
+      "color": "#cf5b9f"
+    },
+    {
+      "name": "minecraft:bubble_coral_block",
+      "color": "#a51aa2"
+    },
+    {
+      "name": "minecraft:fire_coral_block",
+      "color": "#a4232f"
+    },
+    {
+      "name": "minecraft:horn_coral_block",
+      "color": "#d8c842"
+    },
+    {
+      "name": "minecraft:tube_coral_block",
+      "color": "#3157cf"
+    },
+    {
+      "name": "minecraft:dead_brain_coral_block",
+      "color": "#7c7672"
+    },
+    {
+      "name": "minecraft:dead_bubble_coral_block",
+      "color": "#847c77"
+    },
+    {
+      "name": "minecraft:dead_fire_coral_block",
+      "color": "#847c78"
+    },
+    {
+      "name": "minecraft:dead_horn_coral_block",
+      "color": "#867e7a"
+    },
+    {
+      "name": "minecraft:dead_tube_coral_block",
+      "color": "#827b78"
+    },
+    {
+      "name": "minecraft:brain_coral_fan",
+      "color": "#cb549a"
+    },
+    {
+      "name": "minecraft:bubble_coral_fan",
+      "color": "#a0219f"
+    },
+    {
+      "name": "minecraft:fire_coral_fan",
+      "color": "#9f232e"
+    },
+    {
+      "name": "minecraft:horn_coral_fan",
+      "color": "#ceb73d"
+    },
+    {
+      "name": "minecraft:tube_coral_fan",
+      "color": "#335cd1"
+    },
+    {
+      "name": "minecraft:dead_brain_coral_fan",
+      "color": "#857d79"
+    },
+    {
+      "name": "minecraft:dead_bubble_coral_fan",
+      "color": "#8d8782"
+    },
+    {
+      "name": "minecraft:dead_fire_coral_fan",
+      "color": "#7d7673"
+    },
+    {
+      "name": "minecraft:dead_horn_coral_fan",
+      "color": "#867e79"
+    },
+    {
+      "name": "minecraft:dead_tube_coral_fan",
+      "color": "#807a76"
+    },
+    {
+      "name": "minecraft:brain_coral_wall_fan",
+      "color": "#cb549a"
+    },
+    {
+      "name": "minecraft:bubble_coral_wall_fan",
+      "color": "#a0219f"
+    },
+    {
+      "name": "minecraft:fire_coral_wall_fan",
+      "color": "#9f232e"
+    },
+    {
+      "name": "minecraft:horn_coral_wall_fan",
+      "color": "#ceb73d"
+    },
+    {
+      "name": "minecraft:tube_coral_wall_fan",
+      "color": "#335cd1"
+    },
+    {
+      "name": "minecraft:dead_brain_coral_wall_fan",
+      "color": "#857d79"
+    },
+    {
+      "name": "minecraft:dead_bubble_coral_wall_fan",
+      "color": "#8d8782"
+    },
+    {
+      "name": "minecraft:dead_fire_coral_wall_fan",
+      "color": "#7d7673"
+    },
+    {
+      "name": "minecraft:dead_horn_coral_wall_fan",
+      "color": "#867e79"
+    },
+    {
+      "name": "minecraft:dead_tube_coral_wall_fan",
+      "color": "#807a76"
+    },
+    {
+      "name": "minecraft:sea_pickle",
+      "color": "#5a6128",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:blue_ice",
+      "color": "#74a8fd"
+    },
+    {
+      "name": "minecraft:conduit",
+      "color": "#a08c71"
+    },
+    {
+      "name": "minecraft:bubble_column",
+      "color": "#a9a9a9",
+      "alpha": 0.53,
+      "transparent": true,
+      "liquid": true
+    },
+    {
+      "name": "minecraft:structure_block",
+      "color": "#594a5a"
+    },
+    {
+      "name": "minecraft:jigsaw",
+      "color": "#504651"
+    },
+    {
+      "name": "minecraft:bee_nest",
+      "color": "#caa14c"
+    },
+    {
+      "name": "minecraft:beehive",
+      "color": "#b49259"
+    },
+    {
+      "name": "minecraft:honey_block",
+      "color": "#fcba34"
+    },
+    {
+      "name": "minecraft:honeycomb_block",
+      "color": "#e5941f"
+    },
+    {
+      "name": "minecraft:ancient_debris",
+      "color": "#5f423a"
+    },
+    {
+      "name": "minecraft:basalt",
+      "color": "#515156"
+    },
+    {
+      "name": "minecraft:netherite_block",
+      "color": "#433d40"
+    },
+    {
+      "name": "minecraft:crimson_nylium",
+      "color": "#831f1f"
+    },
+    {
+      "name": "minecraft:crimson_fungus",
+      "color": "#8d2c1e"
+    },
+    {
+      "name": "minecraft:crimson_roots",
+      "color": "#7e082a"
+    },
+    {
+      "name": "minecraft:crimson_stem",
+      "color": "#6c344b"
+    },
+    {
+      "name": "minecraft:stripped_crimson_stem",
+      "color": "#7a3853"
+    },
+    {
+      "name": "minecraft:crimson_planks",
+      "color": "#653147"
+    },
+    {
+      "name": "minecraft:crimson_slab",
+      "color": "#6a334a",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:crimson_pressure_plate",
+      "color": "#653147"
+    },
+    {
+      "name": "minecraft:crimson_fence",
+      "color": "#653147"
+    },
+    {
+      "name": "minecraft:crimson_trapdoor",
+      "color": "#683348",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:crimson_fence_gate",
+      "color": "#653147"
+    },
+    {
+      "name": "minecraft:crimson_stairs",
+      "color": "#5f2e43",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:crimson_button",
+      "color": "#653147"
+    },
+    {
+      "name": "minecraft:crimson_door",
+      "color": "#70364e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:crimson_sign",
+      "color": "#653147"
+    },
+    {
+      "name": "minecraft:crimson_hanging_sign",
+      "color": "#653147"
+    },
+    {
+      "name": "minecraft:crimson_wall_sign",
+      "color": "#653147"
+    },
+    {
+      "name": "minecraft:crimson_wall_hanging_sign",
+      "color": "#653147"
+    },
+    {
+      "name": "minecraft:warped_nylium",
+      "color": "#2b7265"
+    },
+    {
+      "name": "minecraft:warped_fungus",
+      "color": "#4a6d58"
+    },
+    {
+      "name": "minecraft:warped_roots",
+      "color": "#148a7c"
+    },
+    {
+      "name": "minecraft:warped_stem",
+      "color": "#396868"
+    },
+    {
+      "name": "minecraft:stripped_warped_stem",
+      "color": "#34817c"
+    },
+    {
+      "name": "minecraft:warped_planks",
+      "color": "#2b6963"
+    },
+    {
+      "name": "minecraft:warped_slab",
+      "color": "#2d6e67",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:warped_pressure_plate",
+      "color": "#2b6963"
+    },
+    {
+      "name": "minecraft:warped_fence",
+      "color": "#2b6963"
+    },
+    {
+      "name": "minecraft:warped_trapdoor",
+      "color": "#2f7870",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:warped_fence_gate",
+      "color": "#2b6963"
+    },
+    {
+      "name": "minecraft:warped_stairs",
+      "color": "#28635e",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:warped_button",
+      "color": "#2b6963"
+    },
+    {
+      "name": "minecraft:warped_door",
+      "color": "#2d7d76",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:warped_sign",
+      "color": "#2b6963"
+    },
+    {
+      "name": "minecraft:warped_hanging_sign",
+      "color": "#2b6963"
+    },
+    {
+      "name": "minecraft:warped_wall_sign",
+      "color": "#2b6963"
+    },
+    {
+      "name": "minecraft:warped_wall_hanging_sign",
+      "color": "#2b6963"
+    },
+    {
+      "name": "minecraft:nether_sprouts",
+      "color": "#149785"
+    },
+    {
+      "name": "minecraft:shroomlight",
+      "color": "#f19347"
+    },
+    {
+      "name": "minecraft:soul_fire",
+      "color": "#6d735a"
+    },
+    {
+      "name": "minecraft:soul_lantern",
+      "color": "#486373"
+    },
+    {
+      "name": "minecraft:soul_torch",
+      "color": "#6d735a"
+    },
+    {
+      "name": "minecraft:soul_wall_torch",
+      "color": "#6d735a"
+    },
+    {
+      "name": "minecraft:soul_soil",
+      "color": "#4c3a2f"
+    },
+    {
+      "name": "minecraft:warped_wart_block",
+      "color": "#177879"
+    },
+    {
+      "name": "minecraft:weeping_vines",
+      "color": "#690100"
+    },
+    {
+      "name": "minecraft:weeping_vines_plant",
+      "color": "#85100c"
+    },
+    {
+      "name": "minecraft:crying_obsidian",
+      "color": "#210a3c"
+    },
+    {
+      "name": "minecraft:target",
+      "color": "#e2aa9e"
+    },
+    {
+      "name": "minecraft:crimson_hyphae",
+      "color": "#6c344b"
+    },
+    {
+      "name": "minecraft:stripped_crimson_hyphae",
+      "color": "#7a3853"
+    },
+    {
+      "name": "minecraft:warped_hyphae",
+      "color": "#396868"
+    },
+    {
+      "name": "minecraft:stripped_warped_hyphae",
+      "color": "#34817c"
+    },
+    {
+      "name": "minecraft:nether_gold_ore",
+      "color": "#fcee4b"
+    },
+    {
+      "name": "minecraft:twisting_vines",
+      "color": "#148f7c"
+    },
+    {
+      "name": "minecraft:twisting_vines_plant",
+      "color": "#14887a"
+    },
+    {
+      "name": "minecraft:polished_basalt",
+      "color": "#636365"
+    },
+    {
+      "name": "minecraft:respawn_anchor",
+      "color": "#4b1a90"
+    },
+    {
+      "name": "minecraft:lodestone",
+      "color": "#939599"
+    },
+    {
+      "name": "minecraft:blackstone",
+      "color": "#2a242a"
+    },
+    {
+      "name": "minecraft:blackstone_slab",
+      "color": "#2c242b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:blackstone_stairs",
+      "color": "#272126",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:blackstone_wall",
+      "color": "#2a242a"
+    },
+    {
+      "name": "minecraft:polished_blackstone",
+      "color": "#353139"
+    },
+    {
+      "name": "minecraft:polished_blackstone_slab",
+      "color": "#37333b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_blackstone_stairs",
+      "color": "#322e36",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_blackstone_wall",
+      "color": "#353139"
+    },
+    {
+      "name": "minecraft:polished_blackstone_button",
+      "color": "#353139"
+    },
+    {
+      "name": "minecraft:polished_blackstone_pressure_plate",
+      "color": "#353139"
+    },
+    {
+      "name": "minecraft:polished_blackstone_bricks",
+      "color": "#2f2930"
+    },
+    {
+      "name": "minecraft:polished_blackstone_brick_slab",
+      "color": "#312b32",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_blackstone_brick_stairs",
+      "color": "#2c262d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_blackstone_brick_wall",
+      "color": "#2f2930"
+    },
+    {
+      "name": "minecraft:cracked_polished_blackstone_bricks",
+      "color": "#2c262c"
+    },
+    {
+      "name": "minecraft:chiseled_polished_blackstone",
+      "color": "#363139"
+    },
+    {
+      "name": "minecraft:gilded_blackstone",
+      "color": "#392c27"
+    },
+    {
+      "name": "minecraft:chiseled_nether_bricks",
+      "color": "#2f181c"
+    },
+    {
+      "name": "minecraft:cracked_nether_bricks",
+      "color": "#281418"
+    },
+    {
+      "name": "minecraft:quartz_bricks",
+      "color": "#ebe5de"
+    },
+    {
+      "name": "minecraft:soul_campfire",
+      "color": "#2a242a"
+    },
+    {
+      "name": "minecraft:chain",
+      "color": "#333a4a",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:small_amethyst_bud",
+      "color": "#8463c0",
+      "alpha": 0.4,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:medium_amethyst_bud",
+      "color": "#9e78ca",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:large_amethyst_bud",
+      "color": "#a17ecb",
+      "alpha": 0.6,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:amethyst_cluster",
+      "color": "#a47fcf",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:amethyst_block",
+      "color": "#8662bf"
+    },
+    {
+      "name": "minecraft:budding_amethyst",
+      "color": "#8460bb"
+    },
+    {
+      "name": "minecraft:calcite",
+      "color": "#dfe0dd"
+    },
+    {
+      "name": "minecraft:candle",
+      "color": "#e8c999",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:white_candle",
+      "color": "#d2d9da",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:orange_candle",
+      "color": "#db6409",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:magenta_candle",
+      "color": "#a12e99",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_blue_candle",
+      "color": "#238ac5",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:yellow_candle",
+      "color": "#d1a532",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:lime_candle",
+      "color": "#62ac17",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pink_candle",
+      "color": "#d0668e",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:gray_candle",
+      "color": "#505e61",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:light_gray_candle",
+      "color": "#767970",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cyan_candle",
+      "color": "#117c7c",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:purple_candle",
+      "color": "#69229f",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:blue_candle",
+      "color": "#394ca1",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:brown_candle",
+      "color": "#704629",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:green_candle",
+      "color": "#496015",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:red_candle",
+      "color": "#992724",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:black_candle",
+      "color": "#26253a",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:chiseled_copper",
+      "color": "#b8654a"
+    },
+    {
+      "name": "minecraft:copper_block",
+      "color": "#c06c50"
+    },
+    {
+      "name": "minecraft:copper_bulb",
+      "color": "#9c5739",
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#d8976b"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:copper_door",
+      "color": "#c16d53",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:copper_grate",
+      "color": "#c06c4f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:copper_trapdoor",
+      "color": "#bf6a50",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cut_copper",
+      "color": "#bf6b51"
+    },
+    {
+      "name": "minecraft:cut_copper_stairs",
+      "color": "#b5654c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cut_copper_slab",
+      "color": "#c87055",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:double_cut_copper_slab",
+      "color": "#c87055",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:exposed_chiseled_copper",
+      "color": "#9b7765"
+    },
+    {
+      "name": "minecraft:exposed_copper",
+      "color": "#a17e68"
+    },
+    {
+      "name": "minecraft:exposed_copper_bulb",
+      "color": "#876c5a",
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#c29164"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:exposed_copper_door",
+      "color": "#a47b6a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:exposed_copper_grate",
+      "color": "#a27e69",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:exposed_copper_trapdoor",
+      "color": "#a17d69",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:exposed_cut_copper",
+      "color": "#9b7a65"
+    },
+    {
+      "name": "minecraft:exposed_cut_copper_stairs",
+      "color": "#987762",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:exposed_cut_copper_slab",
+      "color": "#a9846d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:double_exposed_cut_copper_slab",
+      "color": "#a9846d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:oxidized_chiseled_copper",
+      "color": "#54a284"
+    },
+    {
+      "name": "minecraft:oxidized_copper",
+      "color": "#52a385"
+    },
+    {
+      "name": "minecraft:oxidized_copper_bulb",
+      "color": "#46846d",
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#879a68"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:oxidized_copper_door",
+      "color": "#52a085",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:oxidized_copper_grate",
+      "color": "#52a183",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:oxidized_copper_trapdoor",
+      "color": "#54a184",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:oxidized_cut_copper",
+      "color": "#509a7e"
+    },
+    {
+      "name": "minecraft:oxidized_cut_copper_stairs",
+      "color": "#4d9a7e",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:oxidized_cut_copper_slab",
+      "color": "#56ab8b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:double_oxidized_cut_copper_slab",
+      "color": "#56ab8b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:weathered_chiseled_copper",
+      "color": "#69976f"
+    },
+    {
+      "name": "minecraft:weathered_copper",
+      "color": "#6c996e"
+    },
+    {
+      "name": "minecraft:weathered_copper_bulb",
+      "color": "#5c7f63",
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#9c9d63"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:weathered_copper_door",
+      "color": "#6e976e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:weathered_copper_grate",
+      "color": "#6a996f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:weathered_copper_trapdoor",
+      "color": "#6d996e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:weathered_cut_copper",
+      "color": "#6d916c"
+    },
+    {
+      "name": "minecraft:weathered_cut_copper_stairs",
+      "color": "#669168",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:weathered_cut_copper_slab",
+      "color": "#71a073",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:double_weathered_cut_copper_slab",
+      "color": "#71a073",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_chiseled_copper",
+      "color": "#b8654a"
+    },
+    {
+      "name": "minecraft:waxed_copper_block",
+      "color": "#c06c50"
+    },
+    {
+      "name": "minecraft:waxed_copper_bulb",
+      "color": "#9c5739",
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#d8976b"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_copper_door",
+      "color": "#c16d53",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_copper_grate",
+      "color": "#c06c4f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_copper_trapdoor",
+      "color": "#bf6a50",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_cut_copper",
+      "color": "#bf6b51"
+    },
+    {
+      "name": "minecraft:waxed_cut_copper_stairs",
+      "color": "#b5654c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_cut_copper_slab",
+      "color": "#c87055",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_double_cut_copper_slab",
+      "color": "#c87055",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_exposed_chiseled_copper",
+      "color": "#9b7765"
+    },
+    {
+      "name": "minecraft:waxed_exposed_copper",
+      "color": "#a17e68"
+    },
+    {
+      "name": "minecraft:waxed_exposed_copper_bulb",
+      "color": "#876c5a",
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#c29164"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_exposed_copper_door",
+      "color": "#a47b6a",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_exposed_copper_grate",
+      "color": "#a27e69",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_exposed_copper_trapdoor",
+      "color": "#a17d69",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_exposed_cut_copper",
+      "color": "#9b7a65"
+    },
+    {
+      "name": "minecraft:waxed_exposed_cut_copper_stairs",
+      "color": "#987762",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_exposed_cut_copper_slab",
+      "color": "#a9846d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_double_exposed_cut_copper_slab",
+      "color": "#a9846d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_oxidized_chiseled_copper",
+      "color": "#54a284"
+    },
+    {
+      "name": "minecraft:waxed_oxidized_copper",
+      "color": "#52a385"
+    },
+    {
+      "name": "minecraft:waxed_oxidized_copper_bulb",
+      "color": "#46846d",
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#879a68"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_oxidized_copper_door",
+      "color": "#52a085",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_oxidized_copper_grate",
+      "color": "#52a183",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_oxidized_copper_trapdoor",
+      "color": "#54a184",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_oxidized_cut_copper",
+      "color": "#509a7e"
+    },
+    {
+      "name": "minecraft:waxed_oxidized_cut_copper_stairs",
+      "color": "#4d9a7e",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_oxidized_cut_copper_slab",
+      "color": "#56ab8b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_double_oxidized_cut_copper_slab",
+      "color": "#56ab8b",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_weathered_chiseled_copper",
+      "color": "#69976f"
+    },
+    {
+      "name": "minecraft:waxed_weathered_copper",
+      "color": "#6c996e"
+    },
+    {
+      "name": "minecraft:waxed_weathered_copper_bulb",
+      "color": "#5c7f63",
+      "variants": [
+        {
+          "blockstate": "lit:true",
+          "color": "#9c9d63"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_weathered_copper_door",
+      "color": "#6e976e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_weathered_copper_grate",
+      "color": "#6a996f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_weathered_copper_trapdoor",
+      "color": "#6d996e",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:waxed_weathered_cut_copper",
+      "color": "#6d916c"
+    },
+    {
+      "name": "minecraft:waxed_weathered_cut_copper_stairs",
+      "color": "#669168",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_weathered_cut_copper_slab",
+      "color": "#71a073",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:waxed_double_weathered_cut_copper_slab",
+      "color": "#71a073",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:copper_ore",
+      "color": "#9e7564"
+    },
+    {
+      "name": "minecraft:deepslate_copper_ore",
+      "color": "#8e6454"
+    },
+    {
+      "name": "minecraft:raw_copper_block",
+      "color": "#9e7564"
+    },
+    {
+      "name": "minecraft:lightning_rod",
+      "color": "#c56f53",
+      "alpha": 0.3,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:tinted_glass",
+      "color": "#ffff00",
+      "alpha": 0.8,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:tuff",
+      "color": "#6c6d67"
+    },
+    {
+      "name": "minecraft:chiseled_tuff",
+      "color": "#5e635b"
+    },
+    {
+      "name": "minecraft:tuff_slab",
+      "color": "#71726c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:tuff_stairs",
+      "color": "#666761",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:tuff_wall",
+      "color": "#6c6d67"
+    },
+    {
+      "name": "minecraft:tuff_bricks",
+      "color": "#62675f"
+    },
+    {
+      "name": "minecraft:chiseled_tuff_bricks",
+      "color": "#6f726b"
+    },
+    {
+      "name": "minecraft:tuff_brick_slab",
+      "color": "#666c63",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:tuff_brick_stairs",
+      "color": "#5d615a",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:tuff_brick_wall",
+      "color": "#62675f"
+    },
+    {
+      "name": "minecraft:polished_tuff",
+      "color": "#626864"
+    },
+    {
+      "name": "minecraft:polished_tuff_slab",
+      "color": "#666d69",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_tuff_stairs",
+      "color": "#5d625f",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_tuff_wall",
+      "color": "#626864"
+    },
+    {
+      "name": "minecraft:powder_snow",
+      "color": "#f8fdfd"
+    },
+    {
+      "name": "minecraft:dripstone_block",
+      "color": "#866c5d"
+    },
+    {
+      "name": "minecraft:pointed_dripstone",
+      "color": "#866c5d",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:glow_lichen",
+      "color": "#70837a",
+      "alpha": 0.3,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:azalea",
+      "color": "#667d30",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:flowering_azalea",
+      "color": "#707a40",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:cave_vines",
+      "color": "#5a6d29",
+      "alpha": 0.7,
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "berries:true",
+          "color": "#69712a"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cave_vines_plant",
+      "color": "#586626",
+      "alpha": 0.7,
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "berries:true",
+          "color": "#696b29"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:small_dripleaf",
+      "color": "#5f782e",
+      "transparent": true,
+      "alpha": 0.9
+    },
+    {
+      "name": "minecraft:big_dripleaf",
+      "color": "#708e34",
+      "transparent": true,
+      "alpha": 0.9
+    },
+    {
+      "name": "minecraft:big_dripleaf_stem",
+      "color": "#5b732e",
+      "transparent": true,
+      "alpha": 0.7
+    },
+    {
+      "name": "minecraft:hanging_roots",
+      "color": "#a1735c",
+      "transparent": true,
+      "alpha": 0.7
+    },
+    {
+      "name": "minecraft:moss_block",
+      "color": "#596e2d"
+    },
+    {
+      "name": "minecraft:moss_carpet",
+      "color": "#596e2d",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pale_moss_block",
+      "color": "#6b7069"
+    },
+    {
+      "name": "minecraft:pale_moss_carpet",
+      "color": "#6b7069",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pale_hanging_moss",
+      "color": "#636862",
+      "transparent": true,
+      "alpha": 0.7
+    },
+    {
+      "name": "minecraft:rooted_dirt",
+      "color": "#90684d"
+    },
+    {
+      "name": "minecraft:spore_blossom",
+      "color": "#cf619f",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:deepslate",
+      "color": "#575759"
+    },
+    {
+      "name": "minecraft:chiseled_deepslate",
+      "color": "#363637"
+    },
+    {
+      "name": "minecraft:cobbled_deepslate",
+      "color": "#4d4d51"
+    },
+    {
+      "name": "minecraft:cobbled_deepslate_slab",
+      "color": "#505055",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cobbled_deepslate_stairs",
+      "color": "#49494c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:cobbled_deepslate_wall",
+      "color": "#4d4d51",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:polished_deepslate",
+      "color": "#484949"
+    },
+    {
+      "name": "minecraft:polished_deepslate_slab",
+      "color": "#4b4c4c",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_deepslate_stairs",
+      "color": "#444545",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:polished_deepslate_wall",
+      "color": "#484949",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:deepslate_bricks",
+      "color": "#474747"
+    },
+    {
+      "name": "minecraft:cracked_deepslate_bricks",
+      "color": "#414141"
+    },
+    {
+      "name": "minecraft:deepslate_brick_slab",
+      "color": "#4a4a4a",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:deepslate_brick_stairs",
+      "color": "#434343",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:deepslate_brick_wall",
+      "color": "#474747",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:deepslate_tiles",
+      "color": "#373737"
+    },
+    {
+      "name": "minecraft:cracked_deepslate_tiles",
+      "color": "#353535"
+    },
+    {
+      "name": "minecraft:deepslate_tile_slab",
+      "color": "#444444",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "color": "#3d3d3d",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:deepslate_tile_wall",
+      "color": "#373737",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:smooth_basalt",
+      "color": "#49484e"
+    },
+    {
+      "name": "minecraft:ochre_froglight",
+      "color": "#f5e9b6",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#fbf5cf"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:pearlescent_froglight",
+      "color": "#ece1e5",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#f6f0f0"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:verdant_froglight",
+      "color": "#d3ebd0",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#e5f4e4"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:frogspawn",
+      "color": "#6a5b52",
+      "alpha": 0.5,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:mud",
+      "color": "#3C393D"
+    },
+    {
+      "name": "minecraft:packed_mud",
+      "color": "#8E6B50"
+    },
+    {
+      "name": "minecraft:mud_bricks",
+      "color": "#89684F"
+    },
+    {
+      "name": "minecraft:mud_brick_slab",
+      "color": "#8F6D52",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mud_brick_stairs",
+      "color": "#82624B",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mud_brick_wall",
+      "color": "#89684F",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:mangrove_roots",
+      "color": "#4b3c26",
+      "transparent": true,
+      "alpha": 0.8
+    },
+    {
+      "name": "minecraft:muddy_mangrove_roots",
+      "color": "#443b30",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#463b2d"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mangrove_planks",
+      "color": "#763631"
+    },
+    {
+      "name": "minecraft:mangrove_button",
+      "color": "#763631"
+    },
+    {
+      "name": "minecraft:mangrove_door",
+      "color": "#71312F"
+    },
+    {
+      "name": "minecraft:mangrove_fence",
+      "color": "#763631"
+    },
+    {
+      "name": "minecraft:mangrove_fence_gate",
+      "color": "#763631"
+    },
+    {
+      "name": "minecraft:mangrove_pressure_plate",
+      "color": "#763631"
+    },
+    {
+      "name": "minecraft:mangrove_slab",
+      "color": "#7B3833",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mangrove_stairs",
+      "color": "#70332E",
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:mangrove_trapdoor",
+      "color": "#6F2F2A"
+    },
+    {
+      "name": "minecraft:mangrove_sign",
+      "color": "#763631"
+    },
+    {
+      "name": "minecraft:mangrove_hanging_sign",
+      "color": "#763631"
+    },
+    {
+      "name": "minecraft:mangrove_wall_sign",
+      "color": "#763631"
+    },
+    {
+      "name": "minecraft:mangrove_wall_hanging_sign",
+      "color": "#763631"
+    },
+    {
+      "name": "minecraft:sculk",
+      "color": "#0D1E24"
+    },
+    {
+      "name": "minecraft:sculk_catalyst",
+      "color": "#0F2026"
+    },
+    {
+      "name": "minecraft:sculk_shrieker",
+      "color": "#C7CDAA"
+    },
+    {
+      "name": "minecraft:sculk_vein",
+      "color": "#08303A",
+      "transparent": true,
+      "alpha": 0.3,
+      "variants": [
+        {
+          "blockstate": "down:true",
+          "alpha": 0.8
+        },
+        {
+          "blockstate": "up:true",
+          "alpha": 0.8
+        }
+      ]
+    },
+    {
+      "name": "minecraft:sculk_sensor",
+      "color": "#074654",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:calibrated_sculk_sensor",
+      "color": "#5f598b",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:reinforced_deepslate",
+      "color": "#50534F"
+    },
+    {
+      "name": "minecraft:suspicious_gravel",
+      "color": "#827d7c"
+    },
+    {
+      "name": "minecraft:suspicious_sand",
+      "color": "#dacc9f"
+    },
+    {
+      "name": "minecraft:decorated_pot",
+      "color": "#7d4639",
+      "transparent": true
+    },
+    {
+      "name": "minecraft:pink_petals",
+      "color": "#f7b2d8",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:torchflower",
+      "color": "#e87272",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:torchflower_crop",
+      "alpha": 0.7,
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "age:0",
+          "color": "#1a583c"
+        },
+        {
+          "blockstate": "age:1",
+          "color": "#ebdf5d"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:pitcher_crop",
+      "color": "#9585e6",
+      "alpha": 0.7,
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "age:0 half:lower",
+          "color": "#9b935c"
+        },
+        {
+          "blockstate": "age:1 half:lower",
+          "color": "#a5ad5e"
+        },
+        {
+          "blockstate": "age:2 half:lower",
+          "color": "#c2c06e"
+        },
+        {
+          "blockstate": "age:3 half:lower",
+          "color": "#c2c06e"
+        },
+        {
+          "blockstate": "age:4 half:lower",
+          "color": "#7086b5"
+        },
+        {
+          "blockstate": "age:0 half:upper",
+          "alpha": 0.0
+        },
+        {
+          "blockstate": "age:1 half:upper",
+          "alpha": 0.0
+        },
+        {
+          "blockstate": "age:2 half:upper",
+          "alpha": 0.0
+        },
+        {
+          "blockstate": "age:3 half:upper",
+          "color": "#8cf5cb"
+        },
+        {
+          "blockstate": "age:4 half:upper",
+          "color": "#9585e6"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:pitcher_plant",
+      "alpha": 0.7,
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:lower",
+          "color": "#7086b5"
+        },
+        {
+          "blockstate": "half:upper",
+          "color": "#9585e6"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:sniffer_egg",
+      "color": "#876944",
+      "alpha": 0.9,
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "hatch:0",
+          "color": "#876944"
+        },
+        {
+          "blockstate": "hatch:1",
+          "color": "#81613e"
+        },
+        {
+          "blockstate": "hatch:2",
+          "color": "#78593a"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:crafter",
+      "color": "#706364"
+    },
+    {
+      "name": "minecraft:trial_spawner",
+      "color": "#395363"
+    },
+    {
+      "name": "minecraft:vault",
+      "color": "#37464f"
+    },
+    {
+      "name": "minecraft:heavy_core",
+      "color": "#52565e"
+    },
+    {
+      "name": "minecraft:creaking_heart",
+      "color": "#52443f",
+      "variants": [
+        {
+          "blockstate": "axis:y",
+          "color": "#473a35"
+        },
+        {
+          "blockstate": "creaking:active",
+          "color": "#965431"
+        },
+        {
+          "blockstate": ["axis:y", "creaking:active"],
+          "color": "#99542d"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:resin_clump",
+      "color": "#df701b"
+    },
+    {
+      "name": "minecraft:resin_block",
+      "color": "#d96319"
+    },
+    {
+      "name": "minecraft:resin_brick_slab",
+      "color": "#d85d19",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "type:top",
+          "spawnontop": true
+        },
+        {
+          "blockstate": "type:double",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:resin_brick_stairs",
+      "color": "#c35416",
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "half:top",
+          "spawnontop": true
+        }
+      ]
+    },
+    {
+      "name": "minecraft:resin_brick_wall",
+      "color": "#ce5918",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:resin_bricks",
+      "color": "#ce5918"
+    },
+    {
+      "name": "minecraft:chiseled_resin_bricks",
+      "color": "#c95419"
+    },
+    {
+      "name": "minecraft:closed_eyeblossom",
+      "color": "#6c6265",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:open_eyeblossom",
+      "color": "#857d80",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:leaf_litter",
+      "color": "#a36d46",
+      "alpha": 0.5,
+      "transparent": true,
+      "spawninside": true,
+      "variants": [
+        {
+          "blockstate": "segment_amount:2",
+          "alpha": 0.6
+        },
+        {
+          "blockstate": "segment_amount:3",
+          "alpha": 0.7
+        },
+        {
+          "blockstate": "segment_amount:4",
+          "alpha": 0.8
+        }
+      ]
+    },
+    {
+      "name": "minecraft:wildflowers",
+      "color": "#edd675",
+      "alpha": 0.5,
+      "transparent": true,
+      "spawninside": true,
+      "variants": [
+        {
+          "blockstate": "flower_amount:2",
+          "alpha": 0.6
+        },
+        {
+          "blockstate": "flower_amount:3",
+          "alpha": 0.7
+        },
+        {
+          "blockstate": "flower_amount:4",
+          "alpha": 0.8
+        }
+      ]
+    },
+    {
+      "name": "minecraft:test_block",
+      "color": "#bf9e78",
+      "variants": [
+        {
+          "blockstate": "test_block_mode:log",
+          "color": "#8fb0d6"
+        },
+        {
+          "blockstate": "test_block_mode:fail",
+          "color": "#7d71ab"
+        },
+        {
+          "blockstate": "test_block_mode:accept",
+          "color": "#84bf75"
+        }
+      ]
+    },
+    {
+      "name": "minecraft:test_instance_block",
+      "color": "#7f7977"
+    },
+    {
+      "name": "minecraft:bush",
+      "color": "#787978",
+      "biomeGrass": true,
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:firefly_bush",
+      "color": "#58532b",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:cactus_flower",
+      "color": "#d27987",
+      "alpha": 0.7,
+      "transparent": true
+    },
+    {
+      "name": "minecraft:short_dry_grass",
+      "color": "#bb9f6c",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:tall_dry_grass",
+      "color": "#c5ac7b",
+      "alpha": 0.7,
+      "transparent": true,
+      "spawninside": true
+    },
+    {
+      "name": "minecraft:dried_ghast",
+      "color": "#9f9191",
+      "alpha": 0.9,
+      "transparent": true,
+      "variants": [
+        {
+          "blockstate": "hydration:1",
+          "color": "#b3a8a8"
+        },
+        {
+          "blockstate": "hydration:2",
+          "color": "#c7c0c0"
+        },
+        {
+          "blockstate": "hydration:3",
+          "color": "#f1f0f0"
+        }
+      ]
+    }
+  ],
+  "update": "https://github.com/mrkite/minutor/raw/master/definitions/vanilla_blocks.json"
+}
