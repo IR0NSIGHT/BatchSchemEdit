@@ -4,6 +4,7 @@ import os
 import sys
 import tkinter as tk
 from tkinter import filedialog, messagebox, scrolledtext
+
 from PIL import Image
 from nbtlib import File
 
@@ -172,7 +173,7 @@ def process_schematics(rootDir):
             print(f"An error occurred while processing {path}: {e}\n", flush=True)
 
     combined = combine_images_grid(output_files, 5)
-    combined.convert("RGB").save(os.path.join(output_path, "combined.jpg"))
+    combined.save(os.path.join(output_path, "combined.png"))
     combined.show()
 
 

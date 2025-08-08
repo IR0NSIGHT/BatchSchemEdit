@@ -1,10 +1,11 @@
 import os
-import nbtlib
+import re
 import tkinter as tk
 from tkinter import filedialog, messagebox
 
+import nbtlib
+
 from BlockMappingTable import block_mapping_table
-import re
 
 BLOCK_LIST_FILE = "./minecraft_blocks.txt"
 

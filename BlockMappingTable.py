@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from typing import Callable, List, Dict
+from typing import Callable
 
 
 class AutocompleteEntry(tk.Entry):
