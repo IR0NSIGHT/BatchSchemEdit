@@ -2,7 +2,7 @@ from PIL import Image
 import math
 
 
-def combine_images_grid(image_paths, images_per_row=3, bg_color=(255, 255, 255, 0)):
+def combine_images_grid(image_paths, images_per_row=3, bg_color=(255, 255, 255, 0)) -> Image.Image | None:
     """
     Combines images into a grid.
 
@@ -16,7 +16,8 @@ def combine_images_grid(image_paths, images_per_row=3, bg_color=(255, 255, 255, 
     """
 
     images = [Image.open(p) for p in image_paths]
-
+    if len(images) == 0:
+        return None
     # Find max width and height of all images to align grid cells
     max_width = max(img.width for img in images)
     max_height = max(img.height for img in images)

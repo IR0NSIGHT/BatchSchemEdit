@@ -72,15 +72,27 @@ def render_pixel(x, y, z, width, length, height, block_data, id_to_block, img, p
     return False
 
 
-def render_schematic_side(filepath: str) -> Image.Image:
-    root = File.load(filepath, gzipped=True)  # loads Compound
+def is_gzipped(path):
+    with open(path, "rb") as f:
+        return f.read(2) == b"\x1f\x8b"
+
+
+def render_schematic_side(filepath: str) -> Image.Image | None:
+    file = File.load(filepath, gzipped=is_gzipped(filepath))
+    try:
+        version = file["Schematic"]["Version"]
+    except Exception as e:
+        print(f"ERROR: Can not read schematic version")
+        return
+
+    root = file["Schematic"]
 
     width = root["Width"]
     height = root["Height"]
     length = root["Length"]
 
-    palette = root["Palette"]
-    block_data = root["BlockData"]  # ByteArray
+    palette = root["Blocks"]["Palette"]
+    block_data = root["Blocks"]["Data"]
 
     # Invert palette: id -> block_name (without block states)
     id_to_block = [None] * (max(palette.values()) + 1)
@@ -149,7 +161,9 @@ class RedirectText:
     def flush(self):
         pass  # no-op for compatibility
 
+
 from CombineImages import combine_images_grid
+
 
 def process_schematics(rootDir):
     last_dir = os.path.basename(os.path.normpath(rootDir))
@@ -161,8 +175,12 @@ def process_schematics(rootDir):
     output_files = []
     for path in files:
         try:
-            print(f"Processing {path}...", flush=True)
+            print(f"######################################")
+            print(f"Processing {path}")
             img = render_schematic_side(path)
+            if img is None:
+                print(f"unable to process {os.path.basename(path)}")
+                continue
             img = resize_to_height(img, 200)
             filename = os.path.basename(path).replace(".schem", ".png")
             filePath = os.path.join(output_path, filename)
@@ -173,6 +191,9 @@ def process_schematics(rootDir):
             print(f"An error occurred while processing {path}: {e}\n", flush=True)
 
     combined = combine_images_grid(output_files, 5)
+    if combined is None:
+        print("No images were generated.")
+        return
     combined.save(os.path.join(output_path, "combined.png"))
     combined.show()
 
@@ -210,6 +231,7 @@ def main():
     log_text.pack(padx=20, pady=(5, 20))
 
     window.mainloop()
+
 
 if __name__ == "__main__":
     main()
