@@ -79,20 +79,42 @@ def is_gzipped(path):
 
 def render_schematic_side(filepath: str) -> Image.Image | None:
     file = File.load(filepath, gzipped=is_gzipped(filepath))
-    try:
+    version = 0
+    if "Version" in file.keys():
+        version = file["Version"]
+    elif "Schematic" in file.keys() and "Version" in file["Schematic"]:
         version = file["Schematic"]["Version"]
-    except Exception as e:
+    else:
         print(f"ERROR: Can not read schematic version")
         return
+    print(f"version=sponge v{int(version)}")
 
-    root = file["Schematic"]
+    width = 0
+    height = 0
+    length = 0
 
-    width = root["Width"]
-    height = root["Height"]
-    length = root["Length"]
+    palette = []
+    block_data = []
 
-    palette = root["Blocks"]["Palette"]
-    block_data = root["Blocks"]["Data"]
+    if version == 1:
+        print("version not supported")
+        return None
+    elif version == 2:
+        root = file
+        width = file["Width"]
+        height = file["Height"]
+        length = file["Length"]
+        palette = file["Palette"]
+        block_data = root["BlockData"]
+    elif version == 3:
+        root = file["Schematic"]
+
+        width = root["Width"]
+        height = root["Height"]
+        length = root["Length"]
+
+        palette = root["Blocks"]["Palette"]
+        block_data = root["Blocks"]["Data"]
 
     # Invert palette: id -> block_name (without block states)
     id_to_block = [None] * (max(palette.values()) + 1)
