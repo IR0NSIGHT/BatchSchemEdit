@@ -3,4 +3,4 @@ __pycache__/
 venv/
 build/
 dist/
-BatchSchemEdit.spec/
+BatchSchemEdit.spec
