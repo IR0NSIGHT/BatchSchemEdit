@@ -2,6 +2,7 @@
 ![](resources/BatchSchemEdit-Icon_256.png)  
 With this python program, you can load many .schem files at once, replace block types in all of them and the save back to schem.
 
+## How to use
 Download the .exe from [latest release](https://github.com/IR0NSIGHT/BatchSchemEdit/releases/latest)
 
 1. load .schem files 
@@ -13,9 +14,12 @@ Download the .exe from [latest release](https://github.com/IR0NSIGHT/BatchSchemE
 
 ![](documentation/imgs/BatchSchemEdit.png)
 
-Additional:
+## Additional:
 The list of suggested blocks is updated from the loaded schematics when using "replace" and saved to minecraft_blocks.txt.
 Restart program to get updated suggestions.
+
+## Supported schematics
+- sponge v2 (default worldedit)
 
 ## Run from source
 ### Requirements
