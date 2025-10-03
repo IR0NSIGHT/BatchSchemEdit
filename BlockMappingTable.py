@@ -98,8 +98,11 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
         entry.insert(0, replacement_value)
         entry.focus()
 
-        def save_edit(_):
-            tree.set(row_id, "replacement", entry.get())
+        def save_edit(event=None):
+            if not entry.winfo_exists():
+                return  # already destroyed
+            if row_id in tree.get_children():
+                tree.set(row_id, "replacement", entry.get())
             entry.hide_suggestions()
             entry.destroy()
 
@@ -181,7 +184,7 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
     tree.bind("<Control-a>", select_all)
     tree.bind("<Control-A>", select_all)  # Handle both lowercase and uppercase
 
-    tk.Button(frame, text="Replace blocks", command=on_run_callback).pack(pady=5)
+    tk.Button(frame, text="Replace blocks", command=on_run_callback, takefocus=True).pack(pady=5)
 
     frame.pack(fill=tk.BOTH, expand=True)
     return [update_tree_data, get_current_mappings]
