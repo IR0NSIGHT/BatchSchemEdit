@@ -7,8 +7,9 @@ import ctypes
 
 from BlockMappingTable import block_mapping_table
 
-BLOCK_LIST_FILE = "minecraft_blocks.txt"
+BLOCK_LIST_FILE = "resources/minecraft_blocks.txt"
 APP_TITLE = "Batch Schem Edit v2.1"
+APP_ICON_FILE = "resources/BatchSchemEdit.ico"
 
 
 def resource_path(relative_path):
@@ -489,11 +490,11 @@ def main():
     set_input_widgets_state(tk.DISABLED)
 
     # set taskbar icon
-    myappid = 'irn.batchschemedit.v1'  # arbitrary string
+    myappid = 'irn.batchschemedit.'+APP_TITLE  # arbitrary string
     ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
     # set app icon
-    root.iconbitmap(r"resources/BatchSchemEdit.ico")
+    root.iconbitmap(resource_path(APP_ICON_FILE))
     root.mainloop()
 
 

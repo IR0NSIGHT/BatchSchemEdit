@@ -1,15 +1,8 @@
 # Batch Schem Edit
+![](resources/BatchSchemEdit-Icon_256.png)  
 With this python program, you can load many .schem files at once, replace block types in all of them and the save back to schem.
 
-## Requirements
-python installed on system
-python dependecy manager like pip
-
-## Start program
-```commandline
-pip install -r requirements.txt
-python SchemBlockReplacer.py
-```
+Download the .exe from [latest release](https://github.com/IR0NSIGHT/BatchSchemEdit/releases/latest)
 
 1. load .schem files 
 2. select which blocks to replace. empty replacements will be ignored
@@ -23,6 +16,17 @@ python SchemBlockReplacer.py
 Additional:
 The list of suggested blocks is updated from the loaded schematics when using "replace" and saved to minecraft_blocks.txt.
 Restart program to get updated suggestions.
+
+## Run from source
+### Requirements
+python installed on system
+python dependecy manager like pip
+
+### Start program
+```commandline
+pip install -r requirements.txt
+python SchemBlockReplacer.py
+```
 
 # Schematic Preview
 ![](./documentation/imgs/redwood7.png)

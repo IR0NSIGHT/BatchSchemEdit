@@ -9,6 +9,6 @@ rm -rf ./build ./dist
 
 # build with PyInstaller
 pyinstaller --onefile --windowed BatchSchemEdit.py \
-  --add-data "minecraft_blocks.txt;." \
-  --add-data "mc-materials.csv;." \
+  --add-data "resources/minecraft_blocks.txt;./resources" \
+  --add-data "resources/BatchSchemEdit.ico;./resources" \
   --icon=resources/BatchSchemEdit.ico
