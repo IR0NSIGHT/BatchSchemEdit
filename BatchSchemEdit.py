@@ -1,4 +1,5 @@
 import re
+import shutil
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import nbtlib
@@ -10,6 +11,7 @@ from BlockMappingTable import block_mapping_table
 BLOCK_LIST_FILE = "resources/minecraft_blocks.txt"
 APP_TITLE = "Batch Schem Edit v2.1"
 APP_ICON_FILE = "resources/BatchSchemEdit.ico"
+APP_NAME = "BatchSchemEdit"  # used for appdata/roaming
 
 
 def resource_path(relative_path):
@@ -149,26 +151,49 @@ def get_unique_blocks_from_modified_data(modified_schem_data):
     return unique_blocks
 
 
+def get_permanent_file(rel_file):
+    """
+    get file path to permanent file in APPDATA roaming based on local resource file
+    rel_files live in appdata/temp and are deleted after every restart
+    :param rel_file:
+    :return: path to permanent file
+    """
+    temp = resource_path(rel_file)
+    perm = os.path.join(get_appdata_path(), os.path.basename(temp))
+    if not os.path.exists(perm): shutil.copy2(temp, perm)
+    return perm
+
+
 unsaved_changes = False
 
 
-def update_mappings(mappings: dict[str, str]) -> None:
-    print("hello world")
-
-
-def load_block_list(filepath: str = BLOCK_LIST_FILE) -> list[str]:
-    with open(resource_path(filepath), "r", encoding="utf-8") as file:
+def load_block_list() -> list[str]:
+    with open(get_permanent_file(BLOCK_LIST_FILE), "r", encoding="utf-8") as file:
         return [line.strip() for line in file if line.strip()]
 
 
-def write_block_list(blocks: list[str], filepath: str = BLOCK_LIST_FILE) -> None:
-    with open(resource_path(filepath), "w", encoding="utf-8") as file:
+def write_block_list(blocks: list[str], ) -> None:
+    with open(get_permanent_file(BLOCK_LIST_FILE), "w", encoding="utf-8") as file:
         for block in blocks:
             file.write(block + "\n")
 
 
 def get_current_mappings() -> dict[str, str]:
     return {}
+
+
+def get_appdata_path(app_name=APP_NAME):
+    """Return a persistent folder for storing logs/configs."""
+    if sys.platform == "win32":
+        base = os.getenv("APPDATA")  # e.g., C:\Users\<user>\AppData\Roaming
+    elif sys.platform == "darwin":
+        base = os.path.expanduser("~/Library/Application Support")
+    else:  # Linux/other
+        base = os.path.expanduser("~/.local/share")
+
+    path = os.path.join(base, app_name)
+    os.makedirs(path, exist_ok=True)
+    return path
 
 
 # GUI
@@ -258,10 +283,10 @@ def main():
 
     def update_known_block_list(blocks: list[str]):
         print(f"adding blocks: {blocks}")
-        block_suggestions = set(load_block_list(BLOCK_LIST_FILE))
+        block_suggestions = set(load_block_list())
         for block in blocks:
             block_suggestions.add(block)
-        write_block_list(sorted(list(block_suggestions)), BLOCK_LIST_FILE)
+        write_block_list(sorted(list(block_suggestions)))
 
     def on_open_files():
         global unsaved_changes
@@ -446,7 +471,7 @@ def main():
     frame_master_list = tk.Frame(root)
     frame_master_list.pack(side=tk.LEFT, padx=10, pady=0, fill=tk.BOTH, expand=True)
 
-    block_suggestions = sorted(list(set(load_block_list(BLOCK_LIST_FILE))))
+    block_suggestions = sorted(list(set(load_block_list())))
     [update_mappings, get_current_mappings] = block_mapping_table(frame_master_list, {}, block_suggestions,
                                                                   on_replace_blocks)
 
@@ -490,11 +515,12 @@ def main():
     set_input_widgets_state(tk.DISABLED)
 
     # set taskbar icon
-    myappid = 'irn.batchschemedit.'+APP_TITLE  # arbitrary string
+    myappid = 'irn.batchschemedit.' + APP_TITLE  # arbitrary string
     ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
 
     # set app icon
     root.iconbitmap(resource_path(APP_ICON_FILE))
+
     root.mainloop()
 
 
