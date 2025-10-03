@@ -9,7 +9,7 @@ import ctypes
 from BlockMappingTable import block_mapping_table
 
 BLOCK_LIST_FILE = "resources/minecraft_blocks.txt"
-APP_TITLE = "Batch Schem Edit v2.1"
+APP_TITLE = "Batch Schem Edit v2.2"
 APP_ICON_FILE = "resources/BatchSchemEdit.ico"
 APP_NAME = "BatchSchemEdit"  # used for appdata/roaming
 
