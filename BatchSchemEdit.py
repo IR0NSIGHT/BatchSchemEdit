@@ -306,6 +306,13 @@ def main():
             root.title(APP_TITLE)
 
     def update_master_list(modified_schem_data):
+        """
+        updates global state with these schematics
+        updates GUI with schematic blocks
+        updates block-suggestions for autocomplete
+        :param modified_schem_data:
+        :return:
+        """
         unique_blocks = list(get_unique_blocks_from_modified_data(modified_schem_data))
         unique_blocks = sorted(unique_blocks, key=lambda x: x.split(':', 1)[1])
 
@@ -314,7 +321,9 @@ def main():
         new_mappings = {}
         for block in unique_blocks:
             new_mappings[block] = old_mappings.get(block, "")
-        update_mappings(new_mappings)
+        update_known_block_list(list(new_mappings.keys()))
+        block_suggestions = sorted(list(set(load_block_list())))
+        update_mappings(new_mappings, block_suggestions)
 
         num_files = len(modified_schem_data)
         if num_files == 1:

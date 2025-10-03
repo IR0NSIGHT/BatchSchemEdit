@@ -55,6 +55,7 @@ class AutocompleteEntry(tk.Entry):
             self.listbox.destroy()
             self.listbox = None
 
+SUGGESTION_BLOCKS = []
 
 def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], suggestion_blocks: list[str],
                         on_edit_callback=None) -> list[Callable[[dict[str, str]], None] | Callable[[], dict[str, str]]]:
@@ -66,7 +67,7 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
     :param on_edit_callback: function to call with current mapping on button press
     :return: the frame containing the table and controls
     """
-
+    SUGGESTION_BLOCKS = suggestion_blocks;
     frame = tk.Frame(parent)
     tree = ttk.Treeview(frame, columns=("original", "replacement"), show="headings")
 
@@ -92,7 +93,7 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
         print(f"colum width = {width}")
         replacement_value = tree.set(row_id, "replacement")
 
-        entry = AutocompleteEntry(tree, suggestion_blocks)
+        entry = AutocompleteEntry(tree, SUGGESTION_BLOCKS)
         entry.place(x=x, y=y, width=width, height=height)
         entry.insert(0, replacement_value)
         entry.focus()
@@ -109,7 +110,7 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
         if on_edit_callback:
             on_edit_callback(mapping)
 
-    def update_tree_data(mappings: dict[str, str]) -> None:
+    def update_tree_data(mappings: dict[str, str], suggestion_blocks: list[str]) -> None:
         # Clear all existing rows
         for item in tree.get_children():
             tree.delete(item)
@@ -117,6 +118,9 @@ def block_mapping_table(parent: tk.Widget, block_entries: dict[str, str], sugges
         # Insert updated data
         for block, replacement in mappings.items():
             tree.insert("", "end", values=(block, replacement))
+
+        global SUGGESTION_BLOCKS
+        SUGGESTION_BLOCKS = suggestion_blocks
 
     def copy_value(event=None):
         """ appends first non empty string from selected rows to clipboard. if all are empty, appends '' """
