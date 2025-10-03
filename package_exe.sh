@@ -5,7 +5,10 @@
 # clean previous builds
 rm -rf ./build ./dist
 
+./resources/generate_ico.sh
+
 # build with PyInstaller
-pyinstaller --onefile --windowed SchemBlockReplacer.py \
+pyinstaller --onefile --windowed BatchSchemEdit.py \
   --add-data "minecraft_blocks.txt;." \
-  --add-data "mc-materials.csv;."
+  --add-data "mc-materials.csv;." \
+  --icon=resources/BatchSchemEdit.ico

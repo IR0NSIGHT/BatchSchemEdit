@@ -3,10 +3,12 @@ import tkinter as tk
 from tkinter import filedialog, messagebox
 import nbtlib
 import sys, os
+import ctypes
 
 from BlockMappingTable import block_mapping_table
 
 BLOCK_LIST_FILE = "minecraft_blocks.txt"
+APP_TITLE = "Batch Schem Edit v2.1"
 
 
 def resource_path(relative_path):
@@ -247,7 +249,7 @@ def main():
             modified_schem_data[filepath] = schem_data
 
         unsaved_changes = True
-        root.title(".Schem Block Replacer (Unsaved Changes)")
+        root.title(APP_TITLE + " (Unsaved Changes)")
         update_master_list(modified_schem_data)
         show_message("Blocks Replaced", "\n".join(messages), False)
 
@@ -275,7 +277,7 @@ def main():
             update_master_list(modified_schem_data)
             set_input_widgets_state(tk.NORMAL)
             unsaved_changes = False
-            root.title(".Schem Block Replacer")
+            root.title(APP_TITLE)
 
     def update_master_list(modified_schem_data):
         unique_blocks = list(get_unique_blocks_from_modified_data(modified_schem_data))
@@ -310,7 +312,7 @@ def main():
             saved_filepaths.append(filepath)
 
         unsaved_changes = False
-        root.title(".Schem Block Replacer")
+        root.title(APP_TITLE)
 
         saved_filepaths_str = "\n".join(saved_filepaths)
         show_message("Changes Saved", f"Changes saved to the original .schem files:\n{saved_filepaths_str}", False)
@@ -333,7 +335,7 @@ def main():
             saved_filepaths.append(new_filepath)
 
         unsaved_changes = False
-        root.title(".Schem Block Replacer")
+        root.title(APP_TITLE)
 
         saved_filepaths_str = "\n".join(saved_filepaths)
         show_message("Changes Saved", f"Changes saved to the original .schem files:\n{saved_filepaths_str}", False)
@@ -429,7 +431,7 @@ def main():
                             "Author:\nEthan Hackett\n(Discord: northernmockingbird)\nEdited: Ir0nsight\nGithub: https://github.com/IR0NSIGHT")
 
     root = tk.Tk()
-    root.title(".schem Block Replacer v2.0")
+    root.title(APP_TITLE)
     root.protocol("WM_DELETE_WINDOW", on_exit)
     root.geometry("1000x500")
 
@@ -486,6 +488,12 @@ def main():
     ToolTip(info_button, "Information")
     set_input_widgets_state(tk.DISABLED)
 
+    # set taskbar icon
+    myappid = 'irn.batchschemedit.v1'  # arbitrary string
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(myappid)
+
+    # set app icon
+    root.iconbitmap(r"resources/BatchSchemEdit.ico")
     root.mainloop()
 
 
