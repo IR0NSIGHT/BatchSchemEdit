@@ -1,13 +1,23 @@
-import os
 import re
 import tkinter as tk
 from tkinter import filedialog, messagebox
-
 import nbtlib
+import sys, os
 
 from BlockMappingTable import block_mapping_table
 
-BLOCK_LIST_FILE = "./minecraft_blocks.txt"
+BLOCK_LIST_FILE = "minecraft_blocks.txt"
+
+
+def resource_path(relative_path):
+    """Get absolute path to resource, works for dev and PyInstaller"""
+    if hasattr(sys, '_MEIPASS'):
+        # running from a PyInstaller bundle
+        base_path = sys._MEIPASS
+    else:
+        # running in a normal Python environment
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
 
 class ToolTip:
@@ -144,12 +154,12 @@ def update_mappings(mappings: dict[str, str]) -> None:
 
 
 def load_block_list(filepath: str = BLOCK_LIST_FILE) -> list[str]:
-    with open(filepath, "r", encoding="utf-8") as file:
+    with open(resource_path(filepath), "r", encoding="utf-8") as file:
         return [line.strip() for line in file if line.strip()]
 
 
 def write_block_list(blocks: list[str], filepath: str = BLOCK_LIST_FILE) -> None:
-    with open(filepath, "w", encoding="utf-8") as file:
+    with open(resource_path(filepath), "w", encoding="utf-8") as file:
         for block in blocks:
             file.write(block + "\n")
 
