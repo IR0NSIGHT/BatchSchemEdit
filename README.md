@@ -1,4 +1,5 @@
 # Batch Schem Edit
+View and download directly on [github](https://github.com/IR0NSIGHT/BatchSchemEdit)
 ![](resources/BatchSchemEdit-Icon_256.png)  
 With this python program, you can load many .schem files at once, replace block types in all of them and the save back to schem.
 
